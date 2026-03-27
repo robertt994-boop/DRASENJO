@@ -28,14 +28,14 @@
     "@context": "https://schema.org",
     "@type": "Physician",
     "name": "Dr. Roberto Asenjo Medina",
-    "alternateName": "Dr. Asenjo Cirujano Plástico Granada",
-    "description": "Cirujano plástico especialista en Granada. Experto en aumento de pecho sin cicatrices por vía axilar, lifting facial, lipoescultura con transferencia de grasa, foxy eyes, gliding brow lift y nanofat.",
+    "alternateName": ["Dr. Asenjo Granada", "Cirujano Plástico Granada"],
+    "description": "Cirujano plástico especialista en Granada. Experto en aumento de pecho sin cicatrices por vía axilar, lifting facial SMAS, lipoescultura con transferencia de grasa, foxy eyes, gliding brow lift y nanofat. Miembro de la SECPRE e ISAPS.",
     "url": "https://drasenjo.com",
     "telephone": "+34644188639",
     "email": "info@drasenjo.com",
-    "image": "https://drasenjo.com/foto-dr-asenjo.jpg",
     "medicalSpecialty": "PlasticSurgery",
     "priceRange": "€€€",
+    "currenciesAccepted": "EUR",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "C/ Dr. Alejandro Otero, 8",
@@ -49,38 +49,119 @@
       "latitude": 37.1639,
       "longitude": -3.5955
     },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-        "opens": "09:00",
-        "closes": "19:00"
-      }
-    ],
-    "sameAs": [],
-    "hasMap": "https://maps.google.com/?q=Hospital+HLA+La+Inmaculada+Granada",
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "19:00"
+    }],
     "memberOf": [
+      {"@type":"MedicalOrganization","name":"SECPRE — Sociedad Española de Cirugía Plástica Reparadora y Estética"},
+      {"@type":"MedicalOrganization","name":"ISAPS — International Society of Aesthetic Plastic Surgery"}
+    ],
+    "hasMap": "https://maps.google.com/?q=Hospital+HLA+La+Inmaculada+Granada",
+    "availableService": [
+      {"@type":"MedicalProcedure","name":"Aumento de pecho sin cicatrices vía axilar","procedureType":"SurgicalProcedure"},
+      {"@type":"MedicalProcedure","name":"Aumento mamario híbrido con grasa autóloga","procedureType":"SurgicalProcedure"},
+      {"@type":"MedicalProcedure","name":"Lifting facial SMAS deep plane","procedureType":"SurgicalProcedure"},
+      {"@type":"MedicalProcedure","name":"Mini-lifting facial","procedureType":"SurgicalProcedure"},
+      {"@type":"MedicalProcedure","name":"Gliding Brow Lift","procedureType":"SurgicalProcedure"},
+      {"@type":"MedicalProcedure","name":"Foxy Eyes cantopexia","procedureType":"SurgicalProcedure"},
+      {"@type":"MedicalProcedure","name":"Blefaroplastia superior e inferior","procedureType":"SurgicalProcedure"},
+      {"@type":"MedicalProcedure","name":"Lip Lift subnasal","procedureType":"SurgicalProcedure"},
+      {"@type":"MedicalProcedure","name":"Lipofilling facial y nanofat","procedureType":"SurgicalProcedure"},
+      {"@type":"MedicalProcedure","name":"Abdominoplastia con plicatura de rectos","procedureType":"SurgicalProcedure"},
+      {"@type":"MedicalProcedure","name":"Lipoescultura con transferencia de grasa a glúteos","procedureType":"SurgicalProcedure"},
+      {"@type":"MedicalProcedure","name":"Mastopexia con implantes","procedureType":"SurgicalProcedure"},
+      {"@type":"MedicalProcedure","name":"Recambio de implantes mamarios","procedureType":"SurgicalProcedure"},
+      {"@type":"MedicalProcedure","name":"Ginecomastia","procedureType":"SurgicalProcedure"},
+      {"@type":"MedicalProcedure","name":"Cirugía post-bariátrica","procedureType":"SurgicalProcedure"}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
       {
-        "@type": "MedicalOrganization",
-        "name": "SECPRE — Sociedad Española de Cirugía Plástica Reparadora y Estética"
+        "@type": "Question",
+        "name": "¿Qué es el aumento de pecho sin cicatrices?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Es una técnica de aumento mamario por vía axilar en la que el implante se coloca a través de una pequeña incisión en el pliegue de la axila, sin dejar ninguna cicatriz visible en el pecho. El Dr. Asenjo es uno de los pocos cirujanos en España que realiza esta técnica en Granada."
+        }
       },
       {
-        "@type": "MedicalOrganization",
-        "name": "ISAPS — International Society of Aesthetic Plastic Surgery"
+        "@type": "Question",
+        "name": "¿Cuánto cuesta una consulta con el Dr. Asenjo en Granada?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La primera consulta es gratuita y sin compromiso. Puede solicitarla a través del formulario de la web o llamando al 644 188 639. Las consultas se realizan en el Hospital HLA Universitario La Inmaculada de Granada."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué es el lifting facial SMAS?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El lifting facial SMAS es la técnica más avanzada de rejuvenecimiento facial. Trabaja no solo la piel sino el sistema musculoaponeurótico superficial (SMAS), logrando resultados naturales y duraderos de 8 a 12 años, sin aspecto operado."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué es el nanofat y para qué sirve?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El nanofat es una fracción ultrafiltrada de grasa propia del paciente, rica en células madre, que se inyecta en zonas delicadas como ojeras, arrugas finas o piel apagada. Mejora la textura, luminosidad y calidad de la piel desde dentro, sin rellenos sintéticos."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Dónde opera el Dr. Asenjo en Granada?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Todas las intervenciones se realizan en el Hospital HLA Universitario La Inmaculada de Granada, el primer hospital privado universitario acreditado de Andalucía, con 7 quirófanos, UCI y 14 camas de reanimación."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué es el Gliding Brow Lift?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El Gliding Brow Lift es una técnica mínimamente invasiva de elevación de cejas que se realiza a través de pequeñas incisiones ocultas en el cuero cabelludo. Rejuvenece el tercio superior del rostro eliminando el aspecto de cansancio o enfado sin alterar la expresión natural."
+        }
       }
-    ],
-    "availableService": [
-      {"@type": "MedicalProcedure", "name": "Aumento de pecho sin cicatrices vía axilar", "procedureType": "https://schema.org/SurgicalProcedure"},
-      {"@type": "MedicalProcedure", "name": "Aumento mamario híbrido con grasa", "procedureType": "https://schema.org/SurgicalProcedure"},
-      {"@type": "MedicalProcedure", "name": "Lifting facial SMAS", "procedureType": "https://schema.org/SurgicalProcedure"},
-      {"@type": "MedicalProcedure", "name": "Gliding Brow Lift", "procedureType": "https://schema.org/SurgicalProcedure"},
-      {"@type": "MedicalProcedure", "name": "Foxy Eyes cantopexia", "procedureType": "https://schema.org/SurgicalProcedure"},
-      {"@type": "MedicalProcedure", "name": "Blefaroplastia", "procedureType": "https://schema.org/SurgicalProcedure"},
-      {"@type": "MedicalProcedure", "name": "Lipoescultura con transferencia de grasa", "procedureType": "https://schema.org/SurgicalProcedure"},
-      {"@type": "MedicalProcedure", "name": "Abdominoplastia con plicatura de rectos", "procedureType": "https://schema.org/SurgicalProcedure"},
-      {"@type": "MedicalProcedure", "name": "Lipofilling facial y nanofat", "procedureType": "https://schema.org/SurgicalProcedure"},
-      {"@type": "MedicalProcedure", "name": "Ginecomastia", "procedureType": "https://schema.org/SurgicalProcedure"}
     ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Dr. Roberto Asenjo — Cirugía Plástica Granada",
+    "@id": "https://drasenjo.com",
+    "url": "https://drasenjo.com",
+    "telephone": "+34644188639",
+    "email": "info@drasenjo.com",
+    "image": "https://drasenjo.com/foto-dr-asenjo.jpg",
+    "priceRange": "€€€",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "C/ Dr. Alejandro Otero, 8",
+      "addressLocality": "Granada",
+      "addressRegion": "Andalucía",
+      "postalCode": "18004",
+      "addressCountry": "ES"
+    },
+    "geo": {"@type":"GeoCoordinates","latitude":37.1639,"longitude":-3.5955},
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "19:00"
+    }],
+    "sameAs": ["https://drasenjo.com"]
   }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -330,6 +411,85 @@
       .footer-bot{flex-direction:column;text-align:center}
       .proc-tab{padding:.7rem 1rem;font-size:.58rem}
     }
+
+    @media(max-width:640px){
+      body{font-size:17px}
+      .s-title{font-size:clamp(2rem,7vw,2.6rem)}
+      .proc-name{font-size:1.25rem}
+      .proc-short,.paso-desc,.sl li,.fi-item,.sobre-desc,.hosp-feat,.proc-expand-text,.proc-hl-desc,.test-txt,.c-val{font-size:1rem}
+      .proc-expand-list li,.proc-hl-points li{font-size:.95rem}
+      .proc-tag,.s-eyebrow,.eyebrow,.stat-l,.hosp-stat-l,.fct,.fl{font-size:.75rem;letter-spacing:.12em}
+      .proc-hl-title{font-size:1.7rem}
+      .proc-toggle{width:34px;height:34px;font-size:1.2rem}
+      .btn-gold,.btn-ghost,.fsub{font-size:.82rem}
+      .fi,.fs,.fta{font-size:1rem;padding:1rem}
+      h1.hero-title{font-size:clamp(2.6rem,9vw,4rem)}
+      .hero-sub{font-size:1rem}
+      .test-name{font-size:1rem}
+      .cred{font-size:.72rem}
+    }
+    #proc-sticky{position:sticky;top:60px;z-index:150;background:rgba(8,8,8,.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(200,164,90,.2);display:none;padding:0 5vw}
+    #proc-sticky.visible{display:flex}
+    .sticky-tab{flex:1;padding:.85rem .5rem;font-family:var(--fb);font-size:.6rem;font-weight:500;letter-spacing:.15em;text-transform:uppercase;color:var(--gris);cursor:pointer;border:none;border-bottom:2px solid transparent;background:none;transition:color .35s,border-color .35s;text-align:center;white-space:nowrap}
+    .sticky-tab.active{color:var(--or);border-bottom-color:var(--or)}
+    .sticky-tab:hover:not(.active){color:var(--gris-c)}
+    @media(max-width:480px){.sticky-tab{font-size:.65rem;letter-spacing:.05em;padding:.8rem .15rem}#proc-sticky{top:56px}}
+  
+    /* ── MÓVIL: tipografía cómoda ── */
+    @media(max-width:768px){
+      body{font-size:17px}
+      .s-title{font-size:clamp(1.9rem,6.5vw,2.5rem)}
+      .hero-sub{font-size:1.05rem;line-height:1.9}
+      h1.hero-title{font-size:clamp(2.5rem,8.5vw,3.8rem)}
+      .proc-name{font-size:1.3rem}
+      .proc-short,.proc-expand-text,.proc-hl-desc,.paso-desc,
+      .sobre-desc,.sl li,.fi-item,.hosp-feat,.test-txt,.c-val,
+      .proc-hl-points li,.proc-expand-list li{font-size:1rem;line-height:1.8}
+      .proc-tag{font-size:.78rem}
+      .proc-hl-title{font-size:1.75rem}
+      .proc-toggle{width:36px;height:36px;font-size:1.3rem;top:1.4rem;right:1.4rem}
+      .proc-hl-toggle{width:36px;height:36px;font-size:1.3rem}
+      .btn-gold,.fsub{font-size:.85rem;padding:1rem 2rem;letter-spacing:.18em}
+      .fi,.fs,.fta{font-size:1rem;padding:1rem 1.1rem}
+      .cred{font-size:.72rem;padding:.4rem .9rem}
+      .test-name{font-size:1rem}
+      .s-eyebrow{font-size:.68rem}
+      .hosp-stat-n{font-size:2rem}
+      .hosp-stat-l{font-size:.75rem}
+      .footer-tag,.footer-copy{font-size:.85rem}
+      .fcl a{font-size:.9rem}
+      .fct{font-size:.68rem}
+      .proc-card{padding:1.8rem}
+      .proc-highlight{padding:2rem}
+      .section{padding:4.5rem 5vw}
+    }
+
+    /* ── BARRA STICKY PROCEDIMIENTOS ── */
+    #proc-sticky{
+      position:sticky;top:59px;z-index:150;
+      background:rgba(8,8,8,.97);
+      backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+      border-bottom:1px solid rgba(200,164,90,.25);
+      display:none;
+      padding:0 5vw;
+      width:100%;
+    }
+    #proc-sticky.visible{display:flex}
+    .sticky-tab{
+      flex:1;padding:.9rem .4rem;
+      font-family:var(--fb);font-size:.6rem;font-weight:500;
+      letter-spacing:.14em;text-transform:uppercase;
+      color:var(--gris);cursor:pointer;
+      border:none;border-bottom:2px solid transparent;margin-bottom:-1px;
+      background:none;transition:color .3s,border-color .3s;
+      text-align:center;white-space:nowrap;
+    }
+    .sticky-tab.active{color:var(--or);border-bottom-color:var(--or)}
+    .sticky-tab:hover:not(.active){color:var(--gris-c)}
+    @media(max-width:500px){
+      .sticky-tab{font-size:.68rem;letter-spacing:.06em;padding:.85rem .2rem}
+      #proc-sticky{top:56px}
+    }
   </style>
 </head>
 <body>
@@ -416,16 +576,24 @@
   </div>
 </section>
 
+<!-- Barra sticky de procedimientos -->
+<div id="proc-sticky">
+  <button class="sticky-tab active" onclick="showTab('mama',this,true)">Mama</button>
+  <button class="sticky-tab" onclick="showTab('facial',this,true)">Facial</button>
+  <button class="sticky-tab" onclick="showTab('cuerpo',this,true)">Corporal</button>
+  <button class="sticky-tab" onclick="showTab('masculina',this,true)">Masculina</button>
+</div>
+
 <section id="procedimientos" class="section">
   <div class="section-inner">
     <div class="s-eyebrow reveal">Especialidades</div>
     <h2 class="s-title reveal d1">Procedimientos <em>estéticos</em></h2>
     <p class="s-sub reveal d2" style="margin-bottom:2.5rem">Haz clic en cualquier procedimiento para conocer más detalles sobre la técnica y qué puedes esperar.</p>
     <div class="proc-tabs reveal d3">
-      <button class="proc-tab active" onclick="showTab('mama',this)">Mama</button>
-      <button class="proc-tab" onclick="showTab('facial',this)">Cirugía Facial</button>
-      <button class="proc-tab" onclick="showTab('cuerpo',this)">Contorno Corporal</button>
-      <button class="proc-tab" onclick="showTab('masculina',this)">Cirugía Masculina</button>
+      <button class="proc-tab active" onclick="showTab('mama',this,false)">Mama</button>
+      <button class="proc-tab" onclick="showTab('facial',this,false)">Cirugía Facial</button>
+      <button class="proc-tab" onclick="showTab('cuerpo',this,false)">Contorno Corporal</button>
+      <button class="proc-tab" onclick="showTab('masculina',this,false)">Cirugía Masculina</button>
     </div>
 
     <!-- MAMA -->
@@ -588,7 +756,7 @@
         <div class="contact-items reveal d3">
           <div class="c-detail"><div class="c-icon">🏥</div><div><div class="c-title">Hospital</div><div class="c-val">HLA Universitario La Inmaculada<br><span style="font-size:.78rem;color:var(--gris)">C/ Dr. Alejandro Otero, 8 · Granada</span></div></div></div>
           <div class="c-detail"><div class="c-icon">📞</div><div><div class="c-title">Teléfono / WhatsApp</div><div class="c-val"><a href="tel:644188639" style="color:var(--gris-c)">644 188 639</a></div></div></div>
-          <div class="c-detail"><div class="c-icon">✉</div><div><div class="c-title">Email</div><div class="c-val"><a href="mailto:info@drasenjo.com" style="color:var(--gris-c)">info@drasenjo.com</a></div></div></div>
+          <div class="c-detail"><div class="c-icon">✉</div><div><div class="c-title">Email</div><div class="c-val"><a href="/cdn-cgi/l/email-protection#1f767179705f7b6d7e6c7a717570317c7072" style="color:var(--gris-c)"><span class="__cf_email__" data-cfemail="1970777f76597d6b786a7c777376377a7674">[email&#160;protected]</span></a></div></div></div>
           <div class="c-detail"><div class="c-icon">🕐</div><div><div class="c-title">Horario de Consulta</div><div class="c-val">Lunes a Viernes · 9:00 — 19:00</div></div></div>
         </div>
       </div>
@@ -655,70 +823,109 @@
 </a>
 
 <script>
-  const nav=document.getElementById('nav');
-  window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>60),{passive:true});
+  // Nav scroll
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 60), {passive:true});
 
-  const ham=document.getElementById('ham'),drawer=document.getElementById('drawer');
-  ham.addEventListener('click',()=>{
-    const o=drawer.classList.toggle('open');
-    ham.classList.toggle('open',o);
-    document.body.style.overflow=o?'hidden':'';
+  // Hamburger / Drawer
+  const ham = document.getElementById('ham');
+  const drawer = document.getElementById('drawer');
+  ham.addEventListener('click', () => {
+    const o = drawer.classList.toggle('open');
+    ham.classList.toggle('open', o);
+    document.body.style.overflow = o ? 'hidden' : '';
   });
-  drawer.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{
+  drawer.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', e => {
     e.preventDefault();
-    const target=document.querySelector(a.getAttribute('href'));
-    drawer.classList.remove('open');ham.classList.remove('open');document.body.style.overflow='';
-    if(target) setTimeout(()=>target.scrollIntoView({behavior:'smooth',block:'start'}),300);
+    const target = document.querySelector(a.getAttribute('href'));
+    drawer.classList.remove('open'); ham.classList.remove('open'); document.body.style.overflow = '';
+    if(target) setTimeout(() => target.scrollIntoView({behavior:'smooth', block:'start'}), 300);
   }));
 
-  document.querySelectorAll('a[href^="#"]').forEach(a=>{
-    if(a.closest('#drawer'))return;
-    a.addEventListener('click',e=>{
-      const target=document.querySelector(a.getAttribute('href'));
-      if(target){e.preventDefault();target.scrollIntoView({behavior:'smooth',block:'start'});}
+  // Smooth scroll todos los enlaces internos
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    if(a.closest('#drawer')) return;
+    a.addEventListener('click', e => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if(target){ e.preventDefault(); target.scrollIntoView({behavior:'smooth', block:'start'}); }
     });
   });
 
-  function showTab(name,btn){
-    document.querySelectorAll('.proc-panel').forEach(p=>p.classList.remove('active'));
-    document.querySelectorAll('.proc-tab').forEach(t=>t.classList.remove('active'));
-    document.getElementById('tab-'+name).classList.add('active');
-    btn.classList.add('active');
+  // ── TABS DE PROCEDIMIENTOS (normales + sticky sincronizadas) ──
+  function showTab(name, btn, fromSticky) {
+    document.querySelectorAll('.proc-panel').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.proc-tab, .sticky-tab').forEach(t => t.classList.remove('active'));
+    document.getElementById('tab-' + name).classList.add('active');
+    if(btn) btn.classList.add('active');
+    // Sincronizar la otra barra
+    const selector = fromSticky ? '.proc-tab' : '.sticky-tab';
+    document.querySelectorAll(selector).forEach(t => {
+      if(t.getAttribute('onclick') && t.getAttribute('onclick').includes("'" + name + "'"))
+        t.classList.add('active');
+    });
+    if(fromSticky) {
+      const panel = document.getElementById('tab-' + name);
+      if(panel) setTimeout(() => panel.scrollIntoView({behavior:'smooth', block:'start'}), 50);
+    }
   }
 
-  function toggleCard(card){
-    const wasOpen=card.classList.contains('open');
-    card.closest('.proc-panel').querySelectorAll('.proc-card').forEach(c=>{
+  // ── STICKY BAR: aparece al entrar en #procedimientos ──
+  const stickyBar = document.getElementById('proc-sticky');
+  const procSection = document.getElementById('procedimientos');
+
+  const procObs = new IntersectionObserver(([entry]) => {
+    stickyBar.classList.toggle('visible', entry.isIntersecting);
+  }, {threshold: 0, rootMargin: '-58px 0px -10% 0px'});
+  procObs.observe(procSection);
+
+  // También mostrar sticky al clicar "Procedimientos" en el nav
+  document.querySelectorAll('a[href="#procedimientos"]').forEach(a => {
+    a.addEventListener('click', () => {
+      setTimeout(() => stickyBar.classList.add('visible'), 400);
+    });
+  });
+
+  // ── CARDS EXPANDIBLES ──
+  function toggleCard(card) {
+    const wasOpen = card.classList.contains('open');
+    card.closest('.proc-panel').querySelectorAll('.proc-card').forEach(c => {
       c.classList.remove('open');
-      const t=c.querySelector('.proc-toggle');if(t)t.textContent='+';
+      const t = c.querySelector('.proc-toggle'); if(t) t.textContent = '+';
     });
-    if(!wasOpen){
+    if(!wasOpen) {
       card.classList.add('open');
-      const t=card.querySelector('.proc-toggle');if(t)t.textContent='−';
-      setTimeout(()=>card.scrollIntoView({behavior:'smooth',block:'nearest'}),50);
+      const t = card.querySelector('.proc-toggle'); if(t) t.textContent = '−';
+      setTimeout(() => card.scrollIntoView({behavior:'smooth', block:'nearest'}), 50);
     }
   }
 
-  function toggleHighlight(el){
-    const wasOpen=el.classList.contains('open');
-    document.querySelectorAll('.proc-highlight').forEach(h=>{
+  function toggleHighlight(el) {
+    const wasOpen = el.classList.contains('open');
+    document.querySelectorAll('.proc-highlight').forEach(h => {
       h.classList.remove('open');
-      const t=h.querySelector('.proc-hl-toggle');if(t)t.textContent='+';
+      const t = h.querySelector('.proc-hl-toggle'); if(t) t.textContent = '+';
     });
-    if(!wasOpen){
+    if(!wasOpen) {
       el.classList.add('open');
-      const t=el.querySelector('.proc-hl-toggle');if(t)t.textContent='−';
-      setTimeout(()=>el.scrollIntoView({behavior:'smooth',block:'nearest'}),50);
+      const t = el.querySelector('.proc-hl-toggle'); if(t) t.textContent = '−';
+      setTimeout(() => el.scrollIntoView({behavior:'smooth', block:'nearest'}), 50);
     }
   }
 
-  const obs=new IntersectionObserver(es=>es.forEach(e=>{
-    if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}
-  }),{threshold:.1});
-  document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+  // ── REVEAL ON SCROLL ──
+  const revealObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if(e.isIntersecting){ e.target.classList.add('visible'); revealObs.unobserve(e.target); }
+    });
+  }, {threshold: 0.1});
+  document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
 
-  const obsP=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis');}),{threshold:.3});
-  document.querySelectorAll('.paso').forEach(el=>obsP.observe(el));
+  // ── PASOS LÍNEA DORADA ──
+  const pasoObs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('vis'); });
+  }, {threshold: 0.3});
+  document.querySelectorAll('.paso').forEach(el => pasoObs.observe(el));
+
 </script>
 </body>
 </html>

@@ -3,13 +3,16 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dr. Roberto Asenjo — Cirujano Plástico en Granada | Lifting, Aumento de Pecho, Lipoescultura</title>
-  <meta name="description" content="Dr. Roberto Asenjo, cirujano plástico especialista en Granada. Aumento de pecho sin cicatrices, lifting facial, lipoescultura, foxy eyes, nanofat. Consulta sin compromiso en Hospital HLA Inmaculada."/>
-  <meta name="keywords" content="cirujano plástico Granada, cirugía plástica Granada, aumento de pecho Granada, mamoplastia Granada, lifting facial Granada, lipoescultura Granada, blefaroplastia Granada, rinoplastia Granada, foxy eyes Granada, cirugía estética Granada, Dr Asenjo cirujano, aumento pecho sin cicatrices, vía axilar Granada, nanofat Granada, ginecomastia Granada, abdominoplastia Granada"/>
+  <title>Dr. Roberto Asenjo Medina — Cirujano Plástico en Granada | Cirugía Plástica y Estética</title>
+  <meta name="description" content="Dr. Roberto Asenjo Medina, cirujano plástico en Granada. Especialista en aumento de pecho sin cicatrices, lifting facial SMAS, lipoescultura, foxy eyes y nanofat. Miembro SECPRE e ISAPS. Primera consulta gratuita en Hospital HLA Inmaculada."/>
+  <meta name="keywords" content="Dr Roberto Asenjo Medina cirujano plástico, cirugía plástica Granada, cirujano plástico Granada, cirugía estética Granada, aumento pecho Granada, mamoplastia Granada, aumento pecho sin cicatrices Granada, vía axilar Granada, lifting facial Granada, lifting SMAS Granada, mini lifting Granada, blefaroplastia Granada, foxy eyes Granada, gliding brow lift Granada, lipoescultura Granada, liposucción Granada, abdominoplastia Granada, nanofat Granada, lipofilling facial Granada, ginecomastia Granada, cirugía masculina Granada, SECPRE Granada, ISAPS Granada, Hospital HLA Inmaculada Granada, cirugía plástica Andalucía"/>
   <meta name="author" content="Dr. Roberto Asenjo Medina"/>
   <meta name="robots" content="index, follow"/>
   <meta name="geo.region" content="ES-AN"/>
   <meta name="geo.placename" content="Granada"/>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230a0a0a'/><text x='50' y='68' font-family='Georgia,serif' font-size='52' font-weight='400' fill='%23c8a45a' text-anchor='middle' letter-spacing='-2'>RA</text></svg>"/>
+  <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230a0a0a'/><text x='50' y='68' font-family='Georgia,serif' font-size='52' font-weight='400' fill='%23c8a45a' text-anchor='middle' letter-spacing='-2'>RA</text></svg>"/>
+  <meta name="theme-color" content="#0a0a0a"/>
   <link rel="canonical" href="https://drasenjo.com/"/>
   <!-- Open Graph -->
   <meta property="og:title" content="Dr. Roberto Asenjo — Cirujano Plástico en Granada"/>
@@ -28,6 +31,7 @@
     "@context": "https://schema.org",
     "@type": "Physician",
     "name": "Dr. Roberto Asenjo Medina",
+    "jobTitle": "Cirujano Plástico Especialista",
     "alternateName": ["Dr. Asenjo Granada", "Cirujano Plástico Granada"],
     "description": "Cirujano plástico especialista en Granada. Experto en aumento de pecho sin cicatrices por vía axilar, lifting facial SMAS, lipoescultura con transferencia de grasa, foxy eyes, gliding brow lift y nanofat. Miembro de la SECPRE e ISAPS.",
     "url": "https://drasenjo.com",
@@ -283,7 +287,7 @@
     .proc-expand-list{list-style:none}
     .proc-expand-list li{font-size:.75rem;color:var(--gris);padding:.3rem 0;display:flex;gap:.7rem;align-items:flex-start}
     .proc-expand-list li::before{content:'→';color:var(--or);flex-shrink:0}
-    .proc-highlight{grid-column:span 3;background:linear-gradient(135deg,var(--noir-4) 0%,rgba(200,164,90,.06) 100%);border:1px solid rgba(200,164,90,.22);padding:3rem;position:relative;overflow:hidden;cursor:pointer;transition:border-color var(--t)}
+    .proc-highlight{grid-column:1 / -1;background:linear-gradient(135deg,var(--noir-4) 0%,rgba(200,164,90,.06) 100%);border:1px solid rgba(200,164,90,.22);padding:3rem;position:relative;overflow:hidden;cursor:pointer;transition:border-color var(--t)}
     .proc-highlight:hover{border-color:rgba(200,164,90,.4)}
     .proc-highlight::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(to right,transparent,var(--or),transparent)}
     .proc-hl-badge{display:inline-block;background:var(--or);color:var(--noir);padding:.3rem 1rem;font-size:.58rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;margin-bottom:1.2rem}
@@ -385,8 +389,8 @@
     @media(max-width:1100px){
       .sobre-grid,.hospital-grid{grid-template-columns:1fr;gap:3rem}
       .sobre-img-wrap{max-width:440px}
-      .proc-panel.active{grid-template-columns:repeat(2,1fr)}
-      .proc-highlight{grid-column:span 2}
+      .proc-panel.active{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(255,255,255,.03)}
+      .proc-highlight{grid-column:1 / -1}
       .proc-hl-grid{grid-template-columns:1fr}
       .proceso-steps{grid-template-columns:repeat(2,1fr)}
       .test-grid{grid-template-columns:1fr}
@@ -401,8 +405,8 @@
       .section{padding:5rem 5vw}
       #hero{padding:7rem 5vw 4rem}
       .hero-stats{display:none}
-      .proc-panel.active{grid-template-columns:1fr}
-      .proc-highlight{grid-column:span 1}
+      .proc-panel.active{display:grid;grid-template-columns:1fr;gap:1px;background:rgba(255,255,255,.03)}
+      .proc-highlight{grid-column:1 / -1}
       .proc-hl-grid{grid-template-columns:1fr}
       .proceso-steps{grid-template-columns:1fr;border-top:none}
       .paso{border-right:none;border-bottom:1px solid rgba(255,255,255,.04);padding:2rem 0}
@@ -490,12 +494,53 @@
       .sticky-tab{font-size:.68rem;letter-spacing:.06em;padding:.85rem .2rem}
       #proc-sticky{top:56px}
     }
+
+    /* ── FAQ ── */
+    .faq-list{display:flex;flex-direction:column;gap:0;border-top:1px solid rgba(200,164,90,.15)}
+    .faq-item{border-bottom:1px solid rgba(200,164,90,.1);cursor:pointer;transition:background var(--t)}
+    .faq-item:hover{background:rgba(200,164,90,.03)}
+    .faq-q{display:flex;justify-content:space-between;align-items:center;padding:1.4rem 0;gap:2rem}
+    .faq-q span:first-child{font-family:var(--fd);font-size:1.15rem;font-weight:400;color:var(--blanc);line-height:1.3}
+    .faq-icon{color:var(--or);font-size:1.4rem;flex-shrink:0;line-height:1;transition:transform var(--t);display:inline-block;width:24px;text-align:center}
+    .faq-item.open .faq-icon{transform:rotate(45deg)}
+    .faq-a{max-height:0;overflow:hidden;font-size:.88rem;color:var(--gris-c);line-height:1.85;transition:max-height .4s var(--ease),padding .4s var(--ease);padding:0}
+    .faq-item.open .faq-a{max-height:300px;padding-bottom:1.5rem}
+    @media(max-width:768px){
+      .faq-q span:first-child{font-size:1.05rem}
+      .faq-a{font-size:1rem}
+    }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Dr. Roberto Asenjo Medina — Cirujano Plástico Granada",
+    "url": "https://drasenjo.com",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://drasenjo.com/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Inicio","item":"https://drasenjo.com/"},
+      {"@type":"ListItem","position":2,"name":"El Cirujano","item":"https://drasenjo.com/#sobre"},
+      {"@type":"ListItem","position":3,"name":"Procedimientos","item":"https://drasenjo.com/#procedimientos"},
+      {"@type":"ListItem","position":4,"name":"Hospital HLA","item":"https://drasenjo.com/#hospital"},
+      {"@type":"ListItem","position":5,"name":"Contacto","item":"https://drasenjo.com/#contacto"}
+    ]
+  }
+  </script>
 </head>
 <body>
 
 <nav id="nav">
-  <a href="#hero" class="nav-logo">Dr. <span>Asenjo</span></a>
+  <a href="#hero" class="nav-logo">Dr. Roberto <span>Asenjo</span></a>
   <ul class="nav-center">
     <li><a href="#sobre">El Cirujano</a></li>
     <li><a href="#procedimientos">Procedimientos</a></li>
@@ -520,7 +565,7 @@
   <div class="hero-bg"></div>
   <div class="hero-vline"></div>
   <div class="hero-content">
-    <div class="eyebrow">Cirugía Plástica &amp; Estética · Granada</div>
+    <div class="eyebrow">Dr. Roberto Asenjo Medina · Cirujano Plástico · Granada</div>
     <h1 class="hero-title">El arte de <em>realzar</em><br>tu belleza natural</h1>
     <p class="hero-sub">Resultados naturales y armoniosos para cada paciente. Técnicas de vanguardia con la sensibilidad artística que cada caso requiere.</p>
     <div class="hero-actions">
@@ -528,10 +573,10 @@
       <a href="#procedimientos" class="btn-ghost">Ver procedimientos</a>
     </div>
   </div>
-  <div class="hero-stats">
-    <div class="stat"><span class="stat-n">7<sup>+</sup></span><span class="stat-l">Años de experiencia</span></div>
-    <div class="stat"><span class="stat-n">SECPRE</span><span class="stat-l">Sociedad Española</span></div>
-    <div class="stat"><span class="stat-n">ISAPS</span><span class="stat-l">Sociedad Internacional</span></div>
+  <div class="hero-stats" id="hero-stats">
+    <div class="stat"><span class="stat-n" data-count="7" data-suffix="+">0</span><span class="stat-l">Años de experiencia</span></div>
+    <div class="stat"><span class="stat-n" data-text="SECPRE">—</span><span class="stat-l">Sociedad Española</span></div>
+    <div class="stat"><span class="stat-n" data-text="ISAPS">—</span><span class="stat-l">Sociedad Internacional</span></div>
   </div>
   <div class="scroll-hint"><div class="scroll-hint-line"></div>Scroll</div>
 </section>
@@ -596,7 +641,7 @@
       <button class="proc-tab" onclick="showTab('masculina',this,false)">Cirugía Masculina</button>
     </div>
 
-    <!-- MAMA -->
+    <!-- ══ MAMA ══ -->
     <div class="proc-panel active" id="tab-mama">
       <div class="proc-highlight" onclick="toggleHighlight(this)">
         <div class="proc-hl-toggle">+</div>
@@ -614,7 +659,7 @@
           </ul>
         </div>
         <div class="proc-hl-expand">
-          <p class="proc-expand-text">A través de una incisión de 3–4 cm en el pliegue axilar —completamente oculta con el brazo en reposo— se accede al plano quirúrgico y se coloca el implante con control visual directo. Las prótesis de nueva generación son implantes cohesivos de gel de sílicona que ofrecen resultados muy naturales al tacto. Esta técnica requiere formación específica y experiencia quirúrgica especializada, lo que la convierte en una opción disponible en muy pocos centros en España.</p>
+          <p class="proc-expand-text">A través de una incisión de 3–4 cm en el pliegue axilar —completamente oculta con el brazo en reposo— se accede al plano quirúrgico y se coloca el implante con control visual directo. Las prótesis de nueva generación son implantes cohesivos de gel de sílicona que ofrecen resultados muy naturales al tacto. Esta técnica requiere formación específica y experiencia quirúrgica especializada.</p>
           <ul class="proc-expand-list">
             <li>Sin cicatriz en el pecho en ninguna de sus formas</li>
             <li>Implantes de nueva generación: gel cohesivo, resultado natural al tacto</li>
@@ -639,53 +684,425 @@
           </ul>
         </div>
         <div class="proc-hl-expand">
-          <p class="proc-expand-text">El aumento mamario híbrido combina en un único acto quirúrgico la colocación de un implante de silicona de tamaño moderado con la transferencia de grasa autóloga (lipofilling) sobre el implante y el polo superior del pecho. La grasa actúa como capa de cobertura natural que suaviza las transiciones, rellena las irregularidades y da al conjunto una textura y movilidad completamente naturales.</p>
+          <p class="proc-expand-text">El aumento mamario híbrido combina en un único acto quirúrgico la colocación de un implante de silicona de tamaño moderado con la transferencia de grasa autóloga sobre el implante y el polo superior del pecho. La grasa actúa como capa de cobertura natural que suaviza las transiciones y da al conjunto una textura completamente natural.</p>
           <ul class="proc-expand-list">
             <li>Implante + lipofilling en un único tiempo quirúrgico</li>
             <li>La grasa cubre y suaviza el polo superior y el contorno del implante</li>
             <li>Resultado más natural al tacto que el implante solo</li>
-            <li>Menor tamaño de implante: menor riesgo de contractura y complicaciones</li>
+            <li>Menor tamaño de implante: menor riesgo de contractura</li>
             <li>La grasa transferida que sobrevive es permanente</li>
           </ul>
         </div>
       </div>
-      <div class="proc-card" onclick="toggleCard(this)"><div class="proc-toggle">+</div><div class="proc-num">01</div><div class="proc-name">Aumento de Pecho Clásico</div><div class="proc-tag">Periareolar · Surco submamario · Internal bra</div><p class="proc-short">Aumento con implantes por abordajes clásicos. Técnica contrastada con resultado predecible. Incluye técnica de internal bra para mayor durabilidad del resultado.</p><div class="proc-expand"><p class="proc-expand-text">El abordaje por surco submamario sitúa la cicatriz en el pliegue inferior del pecho. Se puede realizar la técnica de internal bra: suturas profundas en la fascia del músculo pectoral que crean un soporte interno permanente, previniendo la caída del implante y manteniendo la posición óptima a largo plazo.</p><ul class="proc-expand-list"><li>Técnica internal bra: soporte interno permanente del implante</li><li>Implantes anatómicos o redondos según morfología y objetivo</li><li>Plano subfascial o dual plane según el grosor del tejido propio</li><li>Recuperación: 2–3 semanas para actividad normal</li></ul></div></div>
-      <div class="proc-card" onclick="toggleCard(this)"><div class="proc-toggle">+</div><div class="proc-num">02</div><div class="proc-name">Mastopexia con Implantes</div><div class="proc-tag">Elevación + volumen · Un solo tiempo</div><p class="proc-short">Elevación del pecho caído y aumento de volumen en una única intervención. Ideal para recuperar la silueta tras el embarazo o la lactancia.</p><div class="proc-expand"><p class="proc-expand-text">Resuelve en un único acto la ptosis y la pérdida de volumen. Se eleva el complejo areola-pezón, se modela el pecho y el implante restaura el volumen en el polo superior. La planificación de la técnica es clave para minimizar cicatrices.</p><ul class="proc-expand-list"><li>Técnica adaptada al grado de ptosis: periareolar, vertical o T invertida</li><li>Tamaño de implante para resultado proporcional y natural</li><li>Un solo tiempo quirúrgico: menos riesgo y recuperación más eficiente</li></ul></div></div>
-      <div class="proc-card" onclick="toggleCard(this)"><div class="proc-toggle">+</div><div class="proc-num">03</div><div class="proc-name">Mastopexia sin Implantes</div><div class="proc-tag">Elevación pura · Remodelado natural</div><p class="proc-short">Elevación del pecho caído remodelando el tejido existente, sin prótesis. Ideal cuando el volumen es suficiente pero la posición ha perdido su lugar.</p><div class="proc-expand"><p class="proc-expand-text">Se eleva el complejo areola-pezón, se remodela el parénquima mamario y se elimina el exceso de piel. Compatible con lipofilling para añadir volumen de forma completamente natural.</p><ul class="proc-expand-list"><li>Sin implantes: resultado completamente natural al tacto</li><li>Compatible con lipofilling para añadir volumen natural si se desea</li><li>Cicatriz adaptada al grado de caída</li></ul></div></div>
-      <div class="proc-card" onclick="toggleCard(this)"><div class="proc-toggle">+</div><div class="proc-num">04</div><div class="proc-name">Recambio de Implantes</div><div class="proc-tag">Cambio · Capsulectomía · Nueva generación</div><p class="proc-short">Sustitución de prótesis antiguas por implantes de nueva generación. Corrección de contracturas, asimetrías o actualización de tamaño.</p><div class="proc-expand"><p class="proc-expand-text">Puede ser necesario por rotura, contractura capsular, cambio de tamaño o actualización a nuevas generaciones de prótesis. Cada caso se estudia individualmente con pruebas de imagen cuando es necesario.</p><ul class="proc-expand-list"><li>Valoración preoperatoria: ecografía o RM si procede</li><li>Capsulectomía total o parcial según estado de la cápsula</li><li>Posibilidad de cambio de plano, tamaño y tipo de implante</li><li>Combinable con mastopexia si hay ptosis asociada</li></ul></div></div>
-      <div class="proc-card" onclick="toggleCard(this)"><div class="proc-toggle">+</div><div class="proc-num">05</div><div class="proc-name">Reducción Mamaria</div><div class="proc-tag">Hipertrofia · Funcional · Estético</div><p class="proc-short">Extirpación del exceso de tejido mamario para aliviar dolencias físicas y mejorar la estética. Uno de los procedimientos con mayor impacto en calidad de vida.</p><div class="proc-expand"><p class="proc-expand-text">La hipertrofia mamaria genera cervicalgias, rozaduras e impacto emocional. Se extirpa el exceso de tejido y piel, se eleva el pezón y se da forma al nuevo pecho. Todo el tejido extirpado se envía a estudio histológico por protocolo de seguridad.</p><ul class="proc-expand-list"><li>Mejora inmediata del dolor cervical y dorsal</li><li>Técnica de cicatriz adaptada al tamaño de reducción necesaria</li><li>Estudio histológico del tejido extirpado incluido por protocolo</li></ul></div></div>
-      <div class="proc-card" onclick="toggleCard(this)"><div class="proc-toggle">+</div><div class="proc-num">06</div><div class="proc-name">Corrección Mama Tuberosa</div><div class="proc-tag">Malformación · Asimetría · Técnica compleja</div><p class="proc-short">Corrección de la deformidad tubular: base estrecha, polo inferior insuficiente, herniación areolar. Uno de los procedimientos más técnicamente exigentes.</p><div class="proc-expand"><p class="proc-expand-text">Requiere liberación de anillos constrictivos, expansión del polo inferior, corrección de la areola y habitualmente un implante. En casos severos puede necesitarse un primer tiempo con expansor.</p><ul class="proc-expand-list"><li>Diagnóstico y clasificación preoperatoria para diseñar el abordaje correcto</li><li>Liberación de anillos constrictivos y expansión del polo inferior</li><li>Corrección de la areola herniada cuando está presente</li><li>Casos severos pueden requerir expansor en un primer tiempo</li></ul></div></div>
+      <div class="proc-card" onclick="toggleCard(this)">
+        <div class="proc-toggle">+</div><div class="proc-num">01</div>
+        <div class="proc-name">Aumento de Pecho Clásico</div>
+        <div class="proc-tag">Periareolar · Surco submamario · Internal bra</div>
+        <p class="proc-short">Aumento con implantes por abordajes clásicos. Técnica contrastada con resultado predecible. Incluye técnica de internal bra para mayor durabilidad del resultado.</p>
+        <div class="proc-expand">
+          <p class="proc-expand-text">El abordaje por surco submamario sitúa la cicatriz en el pliegue inferior del pecho. Se puede realizar la técnica de internal bra: suturas profundas en la fascia del músculo pectoral que crean un soporte interno permanente, previniendo la caída del implante a largo plazo.</p>
+          <ul class="proc-expand-list">
+            <li>Técnica internal bra: soporte interno permanente del implante</li>
+            <li>Implantes anatómicos o redondos según morfología y objetivo</li>
+            <li>Plano subfascial o dual plane según el grosor del tejido propio</li>
+            <li>Recuperación: 2–3 semanas para actividad normal</li>
+          </ul>
+        </div>
+      </div>
+      <div class="proc-card" onclick="toggleCard(this)">
+        <div class="proc-toggle">+</div><div class="proc-num">02</div>
+        <div class="proc-name">Mastopexia con Implantes</div>
+        <div class="proc-tag">Elevación + volumen · Un solo tiempo</div>
+        <p class="proc-short">Elevación del pecho caído y aumento de volumen en una única intervención. Ideal para recuperar la silueta tras el embarazo o la lactancia.</p>
+        <div class="proc-expand">
+          <p class="proc-expand-text">Resuelve en un único acto la ptosis y la pérdida de volumen. Se eleva el complejo areola-pezón, se modela el pecho y el implante restaura el volumen en el polo superior.</p>
+          <ul class="proc-expand-list">
+            <li>Técnica adaptada al grado de ptosis: periareolar, vertical o T invertida</li>
+            <li>Tamaño de implante para resultado proporcional y natural</li>
+            <li>Un solo tiempo quirúrgico: menos riesgo y recuperación más eficiente</li>
+          </ul>
+        </div>
+      </div>
+      <div class="proc-card" onclick="toggleCard(this)">
+        <div class="proc-toggle">+</div><div class="proc-num">03</div>
+        <div class="proc-name">Mastopexia sin Implantes</div>
+        <div class="proc-tag">Elevación pura · Remodelado natural</div>
+        <p class="proc-short">Elevación del pecho caído remodelando el tejido existente, sin prótesis. Ideal cuando el volumen es suficiente pero la posición ha perdido su lugar.</p>
+        <div class="proc-expand">
+          <p class="proc-expand-text">Se eleva el complejo areola-pezón, se remodela el parénquima mamario y se elimina el exceso de piel. Compatible con lipofilling para añadir volumen de forma completamente natural.</p>
+          <ul class="proc-expand-list">
+            <li>Sin implantes: resultado completamente natural al tacto</li>
+            <li>Compatible con lipofilling para añadir volumen natural si se desea</li>
+            <li>Cicatriz adaptada al grado de caída</li>
+          </ul>
+        </div>
+      </div>
+      <div class="proc-card" onclick="toggleCard(this)">
+        <div class="proc-toggle">+</div><div class="proc-num">04</div>
+        <div class="proc-name">Recambio de Implantes</div>
+        <div class="proc-tag">Cambio · Capsulectomía · Nueva generación</div>
+        <p class="proc-short">Sustitución de prótesis antiguas por implantes de nueva generación. Corrección de contracturas, asimetrías o actualización de tamaño.</p>
+        <div class="proc-expand">
+          <p class="proc-expand-text">Puede ser necesario por rotura, contractura capsular, cambio de tamaño o actualización a nuevas generaciones de prótesis. Cada caso se estudia individualmente con pruebas de imagen cuando es necesario.</p>
+          <ul class="proc-expand-list">
+            <li>Valoración preoperatoria: ecografía o RM si procede</li>
+            <li>Capsulectomía total o parcial según estado de la cápsula</li>
+            <li>Posibilidad de cambio de plano, tamaño y tipo de implante</li>
+            <li>Combinable con mastopexia si hay ptosis asociada</li>
+          </ul>
+        </div>
+      </div>
+      <div class="proc-card" onclick="toggleCard(this)">
+        <div class="proc-toggle">+</div><div class="proc-num">05</div>
+        <div class="proc-name">Reducción Mamaria</div>
+        <div class="proc-tag">Hipertrofia · Funcional · Estético</div>
+        <p class="proc-short">Extirpación del exceso de tejido mamario para aliviar dolencias físicas y mejorar la estética. Gran impacto en calidad de vida.</p>
+        <div class="proc-expand">
+          <p class="proc-expand-text">La hipertrofia mamaria genera cervicalgias, rozaduras e impacto emocional. Se extirpa el exceso de tejido y piel, se eleva el pezón y se da forma al nuevo pecho. Todo el tejido extirpado se envía a estudio histológico.</p>
+          <ul class="proc-expand-list">
+            <li>Mejora inmediata del dolor cervical y dorsal</li>
+            <li>Técnica de cicatriz adaptada al tamaño de reducción necesaria</li>
+            <li>Estudio histológico del tejido extirpado incluido por protocolo</li>
+          </ul>
+        </div>
+      </div>
+      <div class="proc-card" onclick="toggleCard(this)">
+        <div class="proc-toggle">+</div><div class="proc-num">06</div>
+        <div class="proc-name">Corrección Mama Tuberosa</div>
+        <div class="proc-tag">Malformación · Asimetría · Técnica compleja</div>
+        <p class="proc-short">Corrección de la deformidad tubular: base estrecha, polo inferior insuficiente, herniación areolar. Uno de los procedimientos más técnicamente exigentes.</p>
+        <div class="proc-expand">
+          <p class="proc-expand-text">Requiere liberación de anillos constrictivos, expansión del polo inferior, corrección de la areola y habitualmente un implante. En casos severos puede necesitarse un primer tiempo con expansor.</p>
+          <ul class="proc-expand-list">
+            <li>Diagnóstico y clasificación preoperatoria para diseñar el abordaje correcto</li>
+            <li>Liberación de anillos constrictivos y expansión del polo inferior</li>
+            <li>Corrección de la areola herniada cuando está presente</li>
+            <li>Casos severos pueden requerir expansor en un primer tiempo</li>
+          </ul>
+        </div>
+      </div>
     </div>
 
-    <!-- FACIAL -->
+    <!-- ══ FACIAL ══ -->
     <div class="proc-panel" id="tab-facial">
-      <div class="proc-card" onclick="toggleCard(this)"><div class="proc-toggle">+</div><div class="proc-num">01</div><div class="proc-name">Lifting Facial</div><div class="proc-tag">Ritidectomía · SMAS · Deep plane</div><p class="proc-short">Rejuvenecimiento global del tercio inferior e intermedio del rostro. Resultados naturales y duraderos que no producen aspecto "operado".</p><div class="proc-expand"><p class="proc-expand-text">El lifting moderno trabaja el SMAS (sistema musculoaponeurótico superficial) permitiendo tensar desde dentro hacia fuera. Resultados de 8–12 años, muy distintos a los liftings clásicos de tensión cutánea.</p><ul class="proc-expand-list"><li>Técnica SMAS o deep plane según el grado de ptosis</li><li>Cicatrices ocultas en el contorno de la oreja y cuero cabelludo</li><li>Compatible con lipofilling facial y gliding brow lift</li><li>Resultado definitivo a los 2–3 meses</li></ul></div></div>
-      <div class="proc-card" onclick="toggleCard(this)"><div class="proc-toggle">+</div><div class="proc-num">02</div><div class="proc-name">Mini-lifting</div><div class="proc-tag">S-lift · Short-scar · Ambulatorio</div><p class="proc-short">Versión menos invasiva del lifting, ideal para los 40–50 con laxitud moderada. Rejuvenecimiento discreto y recuperación rápida.</p><div class="proc-expand"><p class="proc-expand-text">Actúa sobre la parte inferior de la cara y el cuello con incisiones más cortas, sin apertura del cuero cabelludo. Anestesia local y sedación, régimen ambulatorio, recuperación de 7–10 días.</p><ul class="proc-expand-list"><li>Cirugía ambulatoria: entrada y salida el mismo día</li><li>Recuperación significativamente más rápida que el lifting completo</li><li>Combinable con blefaroplastia, lip lift o lipofilling facial</li></ul></div></div>
-      <div class="proc-card" onclick="toggleCard(this)"><div class="proc-toggle">+</div><div class="proc-num">03</div><div class="proc-name">Blefaroplastia</div><div class="proc-tag">Párpados superiores · Inferiores · Combinada</div><p class="proc-short">Corrección del exceso de piel y bolsas palpebrales para devolver frescura y juventud a la mirada con resultados duraderos.</p><div class="proc-expand"><p class="proc-expand-text">Superior: cicatriz en el pliegue palpebral, invisible en reposo. Inferior: preferentemente transconjuntival (sin cicatriz externa). Pueden operarse por separado o combinadas.</p><ul class="proc-expand-list"><li>Párpado superior: cicatriz en el pliegue, invisible en reposo</li><li>Párpado inferior transconjuntival: sin cicatriz externa</li><li>Ambulatoria, recuperación 7–10 días</li><li>Compatible con foxy eyes y lipofilling periorbitario</li></ul></div></div>
-      <div class="proc-card" onclick="toggleCard(this)"><div class="proc-toggle">+</div><div class="proc-num">04</div><div class="proc-name">Gliding Brow Lift</div><div class="proc-tag">Lifting de cejas · Mínimamente invasivo</div><p class="proc-short">Elevación y reposicionamiento de la ceja caída con técnica mínimamente invasiva. Rejuvenece el tercio superior con cicatrices imperceptibles en el cuero cabelludo.</p><div class="proc-expand"><p class="proc-expand-text">A través de pequeñas incisiones ocultas en el cuero cabelludo, se eleva y reposiciona la ceja de forma precisa sin grandes incisiones. Elimina el aspecto de cansancio o enfado sin alterar la expresión natural.</p><ul class="proc-expand-list"><li>Cicatrices mínimas, ocultas en el cuero cabelludo</li><li>Elimina el aspecto de cansancio por ptosis de cejas</li><li>Recuperación rápida: 7–10 días</li><li>Combinable con lifting facial, blefaroplastia o foxy eyes</li></ul></div></div>
-      <div class="proc-card" onclick="toggleCard(this)"><div class="proc-toggle">+</div><div class="proc-num">05</div><div class="proc-name">Foxy Eyes</div><div class="proc-tag">Cantopexia · Fox eye lift</div><p class="proc-short">Elevación del canto externo del ojo para una mirada más rasgada y felina. Resultado permanente sin rellenos periódicos.</p><div class="proc-expand"><p class="proc-expand-text">Cantopexia lateral: fijación quirúrgica del canto externo que eleva y lateraliza el ángulo ocular. Resultado permanente, sin mantenimiento periódico a diferencia de hilos o rellenos.</p><ul class="proc-expand-list"><li>Resultado permanente sin retoques</li><li>Combinable con blefaroplastia para rejuvenecimiento ocular completo</li><li>Ambulatoria con anestesia local y sedación</li><li>Recuperación: 5–7 días</li></ul></div></div>
-      <div class="proc-card" onclick="toggleCard(this)"><div class="proc-toggle">+</div><div class="proc-num">06</div><div class="proc-name">Lip Lift</div><div class="proc-tag">Elevación labio superior · Subnasal · Permanente</div><p class="proc-short">Elevación quirúrgica del labio superior para reducir el espacio entre nariz y labio, aumentar la exposición del bermellón y dar una apariencia más joven de forma permanente.</p><div class="proc-expand"><p class="proc-expand-text">Mediante una incisión oculta en la base de la nariz, se elimina una pequeña franja de piel que eleva el labio superior. Resultado permanente a diferencia del ácido hialurónico.</p><ul class="proc-expand-list"><li>Cicatriz oculta en la base de la nariz, prácticamente imperceptible</li><li>Resultado permanente sin necesidad de rellenos</li><li>Procedimiento ambulatorio de 30–45 minutos con anestesia local</li><li>Recuperación: 5–7 días</li></ul></div></div>
-      <div class="proc-card" onclick="toggleCard(this)"><div class="proc-toggle">+</div><div class="proc-num">07</div><div class="proc-name">Lipofilling Facial y Nanofat</div><div class="proc-tag">Grasa autóloga · Sien · Ojeras · Calidad de piel</div><p class="proc-short">El nanofat es una fracción ultrafiltrada de grasa propia, rica en células regeneradoras, que mejora la calidad y luminosidad de la piel en zonas delicadas. Completamente natural, sin rellenos sintéticos.</p><div class="proc-expand"><p class="proc-expand-text">El lipofilling facial restaura volumen con grasa propia en sien, pómulos y surcos. El nanofat —grasa emulsificada y filtrada— se infiltra en ojeras y arrugas finas mejorando textura, luminosidad y calidad de piel desde dentro. Material 100% propio, sin riesgo de reacciones.</p><ul class="proc-expand-list"><li>Material 100% propio: sin riesgo de reacciones ni mantenimiento periódico</li><li>Lipofilling: restaura volumen en sien, pómulos, surcos, ojeras, manos</li><li>Nanofat: mejora textura y luminosidad de la piel (efecto "glow")</li><li>Compatible con cualquier lifting o procedimiento facial</li></ul></div></div>
-      <div class="proc-card" onclick="toggleCard(this)"><div class="proc-toggle">+</div><div class="proc-num">08</div><div class="proc-name">Otoplastia</div><div class="proc-tag">Orejas prominentes · Ambulatorio</div><p class="proc-short">Corrección definitiva de orejas prominentes o asimétricas. Ambulatorio, realizable desde los 6 años, recuperación rápida y resultado permanente.</p><div class="proc-expand"><p class="proc-expand-text">Corrección mediante suturas y/o remodelado del cartílago. Anestesia local en adultos y general en niños. Resultado inmediatamente visible con vendaje compresivo la primera semana.</p><ul class="proc-expand-list"><li>Cirugía ambulatoria: alta el mismo día</li><li>Recuperación: 7 días con vendaje, retorno normal a los 14</li><li>Realizable desde los 6 años</li></ul></div></div>
+      <div class="proc-highlight" onclick="toggleHighlight(this)">
+        <div class="proc-hl-toggle">+</div>
+        <span class="proc-hl-badge" style="background:var(--noir-5);color:var(--or);border:1px solid rgba(200,164,90,.3)">Resultado duradero</span>
+        <div class="proc-hl-grid">
+          <div>
+            <div class="proc-hl-title">Lifting Facial<br><em>SMAS · Deep Plane</em></div>
+            <p class="proc-hl-desc">El lifting facial moderno es la alternativa definitiva a los rellenos repetitivos. Un único procedimiento con resultados de 8 a 12 años, completamente naturales. Sin mantenimiento, sin costes periódicos.</p>
+          </div>
+          <ul class="proc-hl-points">
+            <li>Dura 8–12 años: evita años de rellenos costosos y repetitivos</li>
+            <li>Trabaja el SMAS profundo — resultado natural, no "estirado"</li>
+            <li>Cicatrices completamente ocultas en contorno de oreja y cuero cabelludo</li>
+            <li>Compatible con lipofilling, brow lift y blefaroplastia en un solo tiempo</li>
+          </ul>
+        </div>
+        <div class="proc-hl-expand">
+          <p class="proc-expand-text">El lifting facial SMAS trabaja la capa profunda del rostro permitiendo redistribuir los tejidos desde dentro. A diferencia de los rellenos de ácido hialurónico —que duran 6–12 meses y requieren retoques periódicos— el lifting proporciona un resultado estructural y duradero de entre 8 y 12 años.</p>
+          <ul class="proc-expand-list">
+            <li>Técnica SMAS o deep plane según el grado de ptosis y las necesidades del caso</li>
+            <li>Mini-lifting disponible para pacientes más jóvenes (40–50 años)</li>
+            <li>Resultado definitivo: evita el ciclo de rellenos costosos y repetitivos</li>
+            <li>Cicatrices en contorno de oreja y cuero cabelludo: imperceptibles</li>
+            <li>Combinable en el mismo acto con blefaroplastia, brow lift y nanofat</li>
+          </ul>
+        </div>
+      </div>
+      <div class="proc-highlight" onclick="toggleHighlight(this)" style="margin-top:1px">
+        <div class="proc-hl-toggle">+</div>
+        <span class="proc-hl-badge">Innovación</span>
+        <div class="proc-hl-grid">
+          <div>
+            <div class="proc-hl-title">Gliding Brow Lift<br><em>Elevación de cejas avanzada</em></div>
+            <p class="proc-hl-desc">La técnica más moderna de elevación de cejas. Incisiones mínimas ocultas en el cuero cabelludo, sin grandes cortes coronales. Recuperación rápida, resultado natural y duradero.</p>
+          </div>
+          <ul class="proc-hl-points">
+            <li>Mínimamente invasivo: incisiones de 1–2 cm ocultas en el cabello</li>
+            <li>Elimina el aspecto de cansancio o enfado de forma permanente</li>
+            <li>Recuperación de 7–10 días — mucho más rápida que técnicas clásicas</li>
+            <li>Combinable con lifting, blefaroplastia y foxy eyes en un solo tiempo</li>
+          </ul>
+        </div>
+        <div class="proc-hl-expand">
+          <p class="proc-expand-text">El Gliding Brow Lift eleva y reposiciona la ceja a través de incisiones de 1-2 cm en el cuero cabelludo, sin la gran cicatriz coronal de oreja a oreja que requería el lifting clásico de cejas. Recuperación notablemente más rápida y resultado equivalente en efectividad.</p>
+          <ul class="proc-expand-list">
+            <li>Técnica mínimamente invasiva: sin cicatriz coronal</li>
+            <li>Recuperación 7–10 días: retorno a la vida normal muy rápido</li>
+            <li>Resultado permanente de 5–10 años</li>
+            <li>Muy habitual combinarlo con blefaroplastia y foxy eyes en el mismo acto</li>
+          </ul>
+        </div>
+      </div>
+      <div class="proc-card" onclick="toggleCard(this)">
+        <div class="proc-toggle">+</div><div class="proc-num">01</div>
+        <div class="proc-name">Mini-lifting</div>
+        <div class="proc-tag">S-lift · Short-scar · Ambulatorio</div>
+        <p class="proc-short">Versión menos invasiva del lifting, ideal para los 40–50 con laxitud moderada. Rejuvenecimiento discreto y recuperación rápida.</p>
+        <div class="proc-expand">
+          <p class="proc-expand-text">Actúa sobre la parte inferior de la cara y el cuello con incisiones más cortas, sin apertura del cuero cabelludo. Anestesia local y sedación, régimen ambulatorio, recuperación de 7–10 días.</p>
+          <ul class="proc-expand-list">
+            <li>Cirugía ambulatoria: entrada y salida el mismo día</li>
+            <li>Recuperación más rápida que el lifting completo</li>
+            <li>Combinable con blefaroplastia, lip lift o lipofilling facial</li>
+          </ul>
+        </div>
+      </div>
+      <div class="proc-card" onclick="toggleCard(this)">
+        <div class="proc-toggle">+</div><div class="proc-num">02</div>
+        <div class="proc-name">Blefaroplastia</div>
+        <div class="proc-tag">Párpados superiores · Inferiores · Combinada</div>
+        <p class="proc-short">Corrección del exceso de piel y bolsas palpebrales para devolver frescura y juventud a la mirada con resultados duraderos.</p>
+        <div class="proc-expand">
+          <p class="proc-expand-text">Superior: cicatriz en el pliegue palpebral, invisible en reposo. Inferior: preferentemente transconjuntival (sin cicatriz externa). Pueden operarse por separado o combinadas.</p>
+          <ul class="proc-expand-list">
+            <li>Párpado superior: cicatriz en el pliegue, invisible en reposo</li>
+            <li>Párpado inferior transconjuntival: sin cicatriz externa</li>
+            <li>Ambulatoria, recuperación 7–10 días</li>
+            <li>Compatible con foxy eyes y lipofilling periorbitario</li>
+          </ul>
+        </div>
+      </div>
+      <div class="proc-card" onclick="toggleCard(this)">
+        <div class="proc-toggle">+</div><div class="proc-num">03</div>
+        <div class="proc-name">Foxy Eyes</div>
+        <div class="proc-tag">Cantopexia · Fox eye lift</div>
+        <p class="proc-short">Elevación del canto externo del ojo para una mirada más rasgada y felina. Resultado permanente sin rellenos periódicos.</p>
+        <div class="proc-expand">
+          <p class="proc-expand-text">Cantopexia lateral: fijación quirúrgica del canto externo que eleva y lateraliza el ángulo ocular. Resultado permanente, sin mantenimiento periódico.</p>
+          <ul class="proc-expand-list">
+            <li>Resultado permanente sin retoques</li>
+            <li>Combinable con blefaroplastia para rejuvenecimiento ocular completo</li>
+            <li>Ambulatoria con anestesia local y sedación</li>
+            <li>Recuperación: 5–7 días</li>
+          </ul>
+        </div>
+      </div>
+      <div class="proc-card" onclick="toggleCard(this)">
+        <div class="proc-toggle">+</div><div class="proc-num">04</div>
+        <div class="proc-name">Lip Lift</div>
+        <div class="proc-tag">Elevación labio superior · Subnasal · Permanente</div>
+        <p class="proc-short">Elevación quirúrgica del labio superior para reducir el espacio entre nariz y labio y dar una apariencia más joven de forma permanente.</p>
+        <div class="proc-expand">
+          <p class="proc-expand-text">Mediante una incisión oculta en la base de la nariz, se elimina una pequeña franja de piel que eleva el labio superior. Resultado permanente a diferencia del ácido hialurónico.</p>
+          <ul class="proc-expand-list">
+            <li>Cicatriz oculta en la base de la nariz, prácticamente imperceptible</li>
+            <li>Resultado permanente sin necesidad de rellenos</li>
+            <li>Procedimiento ambulatorio de 30–45 minutos con anestesia local</li>
+            <li>Recuperación: 5–7 días</li>
+          </ul>
+        </div>
+      </div>
+      <div class="proc-card" onclick="toggleCard(this)">
+        <div class="proc-toggle">+</div><div class="proc-num">05</div>
+        <div class="proc-name">Lipofilling Facial y Nanofat</div>
+        <div class="proc-tag">Grasa autóloga · Sien · Ojeras · Calidad de piel</div>
+        <p class="proc-short">El nanofat mejora la calidad y luminosidad de la piel en zonas delicadas como ojeras y arrugas finas. Completamente natural, sin rellenos sintéticos.</p>
+        <div class="proc-expand">
+          <p class="proc-expand-text">El lipofilling restaura volumen con grasa propia en sien, pómulos y surcos. El nanofat —grasa emulsificada y filtrada— mejora textura, luminosidad y calidad de piel desde dentro. Material 100% propio, sin riesgo de reacciones.</p>
+          <ul class="proc-expand-list">
+            <li>Material 100% propio: sin riesgo de reacciones ni mantenimiento periódico</li>
+            <li>Lipofilling: restaura volumen en sien, pómulos, surcos, ojeras, manos</li>
+            <li>Nanofat: mejora textura y luminosidad de la piel (efecto "glow")</li>
+            <li>Compatible con cualquier lifting o procedimiento facial</li>
+          </ul>
+        </div>
+      </div>
+      <div class="proc-card" onclick="toggleCard(this)">
+        <div class="proc-toggle">+</div><div class="proc-num">06</div>
+        <div class="proc-name">Otoplastia</div>
+        <div class="proc-tag">Orejas prominentes · Ambulatorio</div>
+        <p class="proc-short">Corrección definitiva de orejas prominentes o asimétricas. Ambulatorio, realizable desde los 6 años, recuperación rápida y resultado permanente.</p>
+        <div class="proc-expand">
+          <p class="proc-expand-text">Corrección mediante suturas y/o remodelado del cartílago. Anestesia local en adultos y general en niños. Resultado inmediatamente visible con vendaje compresivo la primera semana.</p>
+          <ul class="proc-expand-list">
+            <li>Cirugía ambulatoria: alta el mismo día</li>
+            <li>Recuperación: 7 días con vendaje, retorno normal a los 14</li>
+            <li>Realizable desde los 6 años</li>
+          </ul>
+        </div>
+      </div>
     </div>
 
-    <!-- CUERPO -->
+    <!-- ══ CORPORAL ══ -->
     <div class="proc-panel" id="tab-cuerpo">
-      <div class="proc-card" onclick="toggleCard(this)"><div class="proc-toggle">+</div><div class="proc-num">01</div><div class="proc-name">Abdominoplastia</div><div class="proc-tag">Plicatura de rectos · Corrección diástasis</div><p class="proc-short">Corrección completa del abdomen: extirpación del exceso de piel, liposucción complementaria y reparación quirúrgica de la diástasis de rectos mediante plicatura.</p><div class="proc-expand"><p class="proc-expand-text">Incluye la plicatura de los rectos del abdomen: sutura de aproximación que corrige la diástasis (separación muscular frecuente tras el embarazo) y reconstituye la pared abdominal. Fundamental para lograr un abdomen plano y firme.</p><ul class="proc-expand-list"><li>Plicatura de rectos: corrección real de la diástasis abdominal</li><li>Reposición y rediseño del ombligo en posición natural</li><li>Combinable con liposucción de flancos en el mismo acto</li><li>Mini-abdominoplastia para laxitud localizada bajo el ombligo</li></ul></div></div>
-      <div class="proc-card" onclick="toggleCard(this)"><div class="proc-toggle">+</div><div class="proc-num">02</div><div class="proc-name">Lipoescultura con Transferencia de Grasa</div><div class="proc-tag">Glúteos · Caderas · Silueta</div><p class="proc-short">Extracción de grasa en zonas de exceso y transferencia a glúteos y caderas para una silueta más curvilínea y armoniosa. El resultado más natural en contorno corporal.</p><div class="proc-expand"><p class="proc-expand-text">Se elimina grasa de abdomen, flancos y espalda, y se reinyecta purificada en glúteos y caderas. Resultado natural al tacto, permanente en la porción de grasa integrada (habitualmente 60–70%).</p><ul class="proc-expand-list"><li>Extracción selectiva de grasa en múltiples zonas en un solo tiempo</li><li>Aumento de glúteos con grasa autóloga: sin implantes</li><li>Relleno de caderas para silueta más curvilínea</li><li>Material 100% propio: biocompatible, sin riesgo de rechazo</li></ul></div></div>
-      <div class="proc-card" onclick="toggleCard(this)"><div class="proc-toggle">+</div><div class="proc-num">03</div><div class="proc-name">Liposucción</div><div class="proc-tag">Definición suave y natural</div><p class="proc-short">Eliminación selectiva de grasa resistente a dieta y ejercicio. Resultado suave y natural que mejora el contorno corporal sin artificialidad.</p><div class="proc-expand"><p class="proc-expand-text">Se elimina de forma precisa la grasa localizada que no responde a dieta ni ejercicio. El objetivo es siempre una mejora progresiva y natural del contorno. La grasa extraída puede transferirse a glúteos, caderas o pecho.</p><ul class="proc-expand-list"><li>Resultado suave y natural: mejora del contorno sin artificialidad</li><li>Zonas frecuentes: abdomen, flancos, muslos, espalda, brazos</li><li>La grasa puede redirigirse a glúteos, caderas o pecho</li><li>Recuperación con faja compresiva: 4–6 semanas</li></ul></div></div>
-      <div class="proc-card" onclick="toggleCard(this)"><div class="proc-toggle">+</div><div class="proc-num">04</div><div class="proc-name">Cirugía Post-bariátrica</div><div class="proc-tag">Pérdida masiva de peso · Body contouring</div><p class="proc-short">Corrección del exceso de piel tras pérdida masiva de peso o cirugía bariátrica. Procedimientos que devuelven la silueta y mejoran radicalmente la calidad de vida.</p><div class="proc-expand"><p class="proc-expand-text">Tras una pérdida masiva de peso quedan excesos de piel en múltiples zonas. Se planifica conjuntamente qué áreas priorizar, en qué orden y cuándo operar (peso estabilizado mínimo 12 meses).</p><ul class="proc-expand-list"><li>Planificación individualizada: qué operar, en qué orden y en cuántos tiempos</li><li>Abdominoplastia con o sin fleur-de-lis para grandes excesos</li><li>Braquioplastia, cruroplastia y body lift circular</li><li>Momento óptimo: peso estabilizado al menos 12 meses</li></ul></div></div>
-      <div class="proc-card" onclick="toggleCard(this)"><div class="proc-toggle">+</div><div class="proc-num">05</div><div class="proc-name">Braquioplastia</div><div class="proc-tag">Brazos · Exceso de piel</div><p class="proc-short">Corrección del exceso de piel en la cara interna del brazo, con incisiones diseñadas para minimizar la cicatriz.</p><div class="proc-expand"><p class="proc-expand-text">La cicatriz se sitúa en la cara interna del brazo, invisible con el brazo en reposo. En casos leves, la liposucción sola puede ser suficiente.</p><ul class="proc-expand-list"><li>Cicatriz en cara interna del brazo: invisible en reposo</li><li>Combinable con liposucción para casos con grasa asociada</li><li>Ambulatoria o con una noche de hospitalización según el alcance</li></ul></div></div>
-      <div class="proc-card" onclick="toggleCard(this)"><div class="proc-toggle">+</div><div class="proc-num">06</div><div class="proc-name">Cruroplastia</div><div class="proc-tag">Muslos · Pliegue inguinal</div><p class="proc-short">Corrección del exceso de piel en la cara interna del muslo con incisiones ocultas en el pliegue inguinal.</p><div class="proc-expand"><p class="proc-expand-text">Para excesos moderados basta con la incisión inguinal —oculta bajo la ropa interior—. Para excesos mayores puede necesitarse cicatriz vertical adicional. Combinable con liposucción de muslos.</p><ul class="proc-expand-list"><li>Cicatriz inguinal: oculta bajo la ropa interior</li><li>Combinable con liposucción de muslos en el mismo acto</li><li>Recuperación: 2–3 semanas</li></ul></div></div>
+      <div class="proc-highlight" onclick="toggleHighlight(this)">
+        <div class="proc-hl-toggle">+</div>
+        <span class="proc-hl-badge">Técnica Destacada</span>
+        <div class="proc-hl-grid">
+          <div>
+            <div class="proc-hl-title">Lipoescultura con<br><em>Transferencia de Grasa</em></div>
+            <p class="proc-hl-desc">Extracción de grasa donde sobra y transferencia a glúteos y caderas donde falta. Un único procedimiento que remodela la silueta completa con tejido 100% propio — sin implantes, sin riesgo de rechazo.</p>
+          </div>
+          <ul class="proc-hl-points">
+            <li>Dos procedimientos en uno: extracción + relleno en el mismo acto</li>
+            <li>Aumento de glúteos y caderas con grasa propia — sin implantes</li>
+            <li>Resultado permanente y completamente natural al tacto</li>
+            <li>Sin riesgo de rechazo · Material 100% biocompatible</li>
+          </ul>
+        </div>
+        <div class="proc-hl-expand">
+          <p class="proc-expand-text">La lipoescultura con transferencia de grasa combina extracción selectiva de grasa en abdomen, flancos y espalda con reinyección de esa misma grasa purificada en glúteos y caderas. El resultado es una silueta más curvilínea con material completamente propio del paciente. La porción integrada (habitualmente el 60–70%) es permanente. Sin implantes, sin riesgo de rechazo, sin revisiones futuras.</p>
+          <ul class="proc-expand-list">
+            <li>Extracción de abdomen, flancos y espalda en el mismo acto</li>
+            <li>Aumento natural de glúteos: sin implantes, sin riesgo, sin revisión</li>
+            <li>Relleno de caderas para una silueta más femenina y proporcionada</li>
+            <li>60–70% de la grasa transferida se integra de forma permanente</li>
+            <li>Resultado definitivo visible a los 3–6 meses</li>
+          </ul>
+        </div>
+      </div>
+      <div class="proc-card" onclick="toggleCard(this)">
+        <div class="proc-toggle">+</div><div class="proc-num">01</div>
+        <div class="proc-name">Abdominoplastia</div>
+        <div class="proc-tag">Plicatura de rectos · Corrección diástasis</div>
+        <p class="proc-short">Corrección completa del abdomen: extirpación del exceso de piel, liposucción complementaria y reparación quirúrgica de la diástasis de rectos mediante plicatura.</p>
+        <div class="proc-expand">
+          <p class="proc-expand-text">Incluye la plicatura de los rectos del abdomen: sutura de aproximación que corrige la diástasis (separación muscular frecuente tras el embarazo) y reconstituye la pared abdominal. Fundamental para lograr un abdomen plano y firme.</p>
+          <ul class="proc-expand-list">
+            <li>Plicatura de rectos: corrección real de la diástasis abdominal</li>
+            <li>Reposición y rediseño del ombligo en posición natural</li>
+            <li>Combinable con liposucción de flancos en el mismo acto</li>
+            <li>Mini-abdominoplastia para laxitud localizada bajo el ombligo</li>
+          </ul>
+        </div>
+      </div>
+      <div class="proc-card" onclick="toggleCard(this)">
+        <div class="proc-toggle">+</div><div class="proc-num">02</div>
+        <div class="proc-name">Liposucción</div>
+        <div class="proc-tag">Definición suave y natural</div>
+        <p class="proc-short">Eliminación selectiva de grasa resistente a dieta y ejercicio. Resultado suave y natural que mejora el contorno corporal sin artificialidad.</p>
+        <div class="proc-expand">
+          <p class="proc-expand-text">Se elimina de forma precisa la grasa localizada que no responde a dieta ni ejercicio. La grasa extraída puede transferirse a glúteos, caderas o pecho.</p>
+          <ul class="proc-expand-list">
+            <li>Resultado suave y natural: mejora del contorno sin artificialidad</li>
+            <li>Zonas frecuentes: abdomen, flancos, muslos, espalda, brazos</li>
+            <li>La grasa puede redirigirse a glúteos, caderas o pecho</li>
+            <li>Recuperación con faja compresiva: 4–6 semanas</li>
+          </ul>
+        </div>
+      </div>
+      <div class="proc-card" onclick="toggleCard(this)">
+        <div class="proc-toggle">+</div><div class="proc-num">03</div>
+        <div class="proc-name">Cirugía Post-bariátrica</div>
+        <div class="proc-tag">Pérdida masiva de peso · Body contouring</div>
+        <p class="proc-short">Corrección del exceso de piel tras pérdida masiva de peso o cirugía bariátrica. Procedimientos que devuelven la silueta y mejoran radicalmente la calidad de vida.</p>
+        <div class="proc-expand">
+          <p class="proc-expand-text">Tras una pérdida masiva de peso quedan excesos de piel en múltiples zonas. Se planifica conjuntamente qué áreas priorizar, en qué orden y cuándo operar.</p>
+          <ul class="proc-expand-list">
+            <li>Planificación individualizada: qué operar, en qué orden y en cuántos tiempos</li>
+            <li>Abdominoplastia con o sin fleur-de-lis para grandes excesos</li>
+            <li>Braquioplastia, cruroplastia y body lift circular</li>
+            <li>Momento óptimo: peso estabilizado al menos 12 meses</li>
+          </ul>
+        </div>
+      </div>
+      <div class="proc-card" onclick="toggleCard(this)">
+        <div class="proc-toggle">+</div><div class="proc-num">04</div>
+        <div class="proc-name">Braquioplastia</div>
+        <div class="proc-tag">Brazos · Exceso de piel</div>
+        <p class="proc-short">Corrección del exceso de piel en la cara interna del brazo, con incisiones diseñadas para minimizar la cicatriz.</p>
+        <div class="proc-expand">
+          <p class="proc-expand-text">La cicatriz se sitúa en la cara interna del brazo, invisible con el brazo en reposo. En casos leves, la liposucción sola puede ser suficiente.</p>
+          <ul class="proc-expand-list">
+            <li>Cicatriz en cara interna del brazo: invisible en reposo</li>
+            <li>Combinable con liposucción para casos con grasa asociada</li>
+            <li>Ambulatoria o con una noche de hospitalización según el alcance</li>
+          </ul>
+        </div>
+      </div>
+      <div class="proc-card" onclick="toggleCard(this)">
+        <div class="proc-toggle">+</div><div class="proc-num">05</div>
+        <div class="proc-name">Cruroplastia</div>
+        <div class="proc-tag">Muslos · Pliegue inguinal</div>
+        <p class="proc-short">Corrección del exceso de piel en la cara interna del muslo con incisiones ocultas en el pliegue inguinal.</p>
+        <div class="proc-expand">
+          <p class="proc-expand-text">Para excesos moderados basta con la incisión inguinal —oculta bajo la ropa interior—. Para excesos mayores puede necesitarse cicatriz vertical adicional.</p>
+          <ul class="proc-expand-list">
+            <li>Cicatriz inguinal: oculta bajo la ropa interior</li>
+            <li>Combinable con liposucción de muslos en el mismo acto</li>
+            <li>Recuperación: 2–3 semanas</li>
+          </ul>
+        </div>
+      </div>
     </div>
 
-    <!-- MASCULINA -->
+    <!-- ══ MASCULINA ══ -->
     <div class="proc-panel" id="tab-masculina">
-      <div class="proc-card" onclick="toggleCard(this)"><div class="proc-toggle">+</div><div class="proc-num">01</div><div class="proc-name">Ginecomastia</div><div class="proc-tag">Tejido mamario masculino · Definitivo</div><p class="proc-short">Reducción del exceso de tejido mamario en hombres. Alto impacto emocional y alta satisfacción. Resultado definitivo.</p><div class="proc-expand"><p class="proc-expand-text">Combina liposucción y/o resección glandular directa según el caso. Cirugía ambulatoria en la mayoría de casos. Resultado definitivo y recuperación rápida.</p><ul class="proc-expand-list"><li>Liposucción para pseudoginecomastia (componente graso)</li><li>Resección glandular cuando hay componente glandular verdadero</li><li>Ambulatoria en la mayoría de casos</li><li>Faja compresiva 4 semanas; resultado visible desde el primer momento</li></ul></div></div>
-      <div class="proc-card" onclick="toggleCard(this)"><div class="proc-toggle">+</div><div class="proc-num">02</div><div class="proc-name">Lipotransferencia Muscular</div><div class="proc-tag">Pectorales · Grasa autóloga · Sin implantes</div><p class="proc-short">Transferencia de grasa propia para definir y aumentar el volumen de pectorales o glúteos masculinos. Resultado completamente natural, sin implantes.</p><div class="proc-expand"><p class="proc-expand-text">Combina liposucción de abdomen y flancos con reinyección estratégica en pectorales. Permite aumentar el volumen con resultado completamente natural al tacto. Inyección estratificada y precisa para garantizar la integración de la grasa.</p><ul class="proc-expand-list"><li>Aumento de pectorales con grasa propia: sin implantes</li><li>Combinable con liposucción de abdomen en el mismo acto</li><li>Material 100% propio: sin riesgo de rechazo ni revisión futura</li></ul></div></div>
-      <div class="proc-card" onclick="toggleCard(this)"><div class="proc-toggle">+</div><div class="proc-num">03</div><div class="proc-name">Liposucción Masculina</div><div class="proc-tag">Abdomen · Flancos · Definición natural</div><p class="proc-short">Eliminación de grasa abdominal resistente al ejercicio. Resultado definido y natural que devuelve una silueta más atlética.</p><div class="proc-expand"><p class="proc-expand-text">La grasa masculina con predominio abdominal responde muy bien a la liposucción. Objetivo siempre natural y progresivo. La grasa extraída puede transferirse a pectorales si se desea.</p><ul class="proc-expand-list"><li>Reducción de abdomen, flancos y espalda en un único acto</li><li>Definición natural sin artificialidad</li><li>La grasa puede redirigirse a pectorales o glúteos</li><li>Recuperación con faja compresiva: 4–6 semanas</li></ul></div></div>
-      <div class="proc-card" onclick="toggleCard(this)"><div class="proc-toggle">+</div><div class="proc-num">04</div><div class="proc-name">Rejuvenecimiento Facial Masculino</div><div class="proc-tag">Lifting · Blefaroplastia · Natural</div><p class="proc-short">Cirugía de rejuvenecimiento facial adaptada a la anatomía masculina. Resultados naturales sin feminizar los rasgos.</p><div class="proc-expand"><p class="proc-expand-text">Las incisiones se adaptan a la posición de la patilla y el vello facial. El objetivo es rejuvenecer manteniendo los rasgos masculinos. Combinación habitual: lifting de cuello, blefaroplastia y nanofat.</p><ul class="proc-expand-list"><li>Incisiones adaptadas a la anatomía masculina y el vello facial</li><li>Objetivo: rejuvenecer sin feminizar ni alterar la expresión</li><li>Blefaroplastia, lifting de cuello y nanofat como combinación habitual</li></ul></div></div>
+      <div class="proc-highlight" onclick="toggleHighlight(this)">
+        <div class="proc-hl-toggle">+</div>
+        <span class="proc-hl-badge">Innovación</span>
+        <div class="proc-hl-grid">
+          <div>
+            <div class="proc-hl-title">Lipotransferencia<br><em>Muscular Masculina</em></div>
+            <p class="proc-hl-desc">Aumento de pectorales con grasa propia del paciente, sin implantes. Un único acto quirúrgico que elimina grasa donde sobra y define músculo donde se necesita. Resultado 100% natural al tacto, permanente y sin revisiones.</p>
+          </div>
+          <ul class="proc-hl-points">
+            <li>Sin implantes: grasa propia del paciente, 0% riesgo de rechazo</li>
+            <li>Dos en uno: liposucción de abdomen + aumento de pectorales</li>
+            <li>Resultado natural al tacto — indistinguible del tejido muscular</li>
+            <li>Permanente: la grasa integrada no requiere revisiones futuras</li>
+          </ul>
+        </div>
+        <div class="proc-hl-expand">
+          <p class="proc-expand-text">La lipotransferencia muscular masculina es la técnica más innovadora para mejorar el contorno corporal masculino sin implantes. En un único acto quirúrgico se extraen grasa del abdomen y flancos, y esa misma grasa purificada se reinyecta de forma estratificada en los pectorales. Resultado completamente natural al tacto, sin el aspecto artificial de los implantes.</p>
+          <ul class="proc-expand-list">
+            <li>Extracción de abdomen y flancos + aumento de pectorales en el mismo acto</li>
+            <li>Grasa 100% propia: sin riesgo de rechazo, sin cápsula, sin revisión</li>
+            <li>Resultado completamente natural al tacto e indistinguible del tejido real</li>
+            <li>Combinable con lipotransferencia a glúteos en el mismo acto</li>
+            <li>60-70% de la grasa integrada es permanente</li>
+          </ul>
+        </div>
+      </div>
+      <div class="proc-card" onclick="toggleCard(this)">
+        <div class="proc-toggle">+</div><div class="proc-num">01</div>
+        <div class="proc-name">Ginecomastia</div>
+        <div class="proc-tag">Tejido mamario masculino · Definitivo</div>
+        <p class="proc-short">Reducción del exceso de tejido mamario en hombres. Alto impacto emocional y alta satisfacción. Resultado definitivo.</p>
+        <div class="proc-expand">
+          <p class="proc-expand-text">Combina liposucción y/o resección glandular directa según el caso. Cirugía ambulatoria en la mayoría de casos. Resultado definitivo y recuperación rápida.</p>
+          <ul class="proc-expand-list">
+            <li>Liposucción para pseudoginecomastia (componente graso)</li>
+            <li>Resección glandular cuando hay componente glandular verdadero</li>
+            <li>Ambulatoria en la mayoría de casos</li>
+            <li>Faja compresiva 4 semanas; resultado visible desde el primer momento</li>
+          </ul>
+        </div>
+      </div>
+      <div class="proc-card" onclick="toggleCard(this)">
+        <div class="proc-toggle">+</div><div class="proc-num">02</div>
+        <div class="proc-name">Liposucción Masculina</div>
+        <div class="proc-tag">Abdomen · Flancos · Definición natural</div>
+        <p class="proc-short">Eliminación de grasa abdominal resistente al ejercicio. Resultado definido y natural que devuelve una silueta más atlética.</p>
+        <div class="proc-expand">
+          <p class="proc-expand-text">La grasa masculina con predominio abdominal responde muy bien a la liposucción. La grasa extraída puede transferirse a pectorales si se desea.</p>
+          <ul class="proc-expand-list">
+            <li>Reducción de abdomen, flancos y espalda en un único acto</li>
+            <li>Definición natural sin artificialidad</li>
+            <li>La grasa puede redirigirse a pectorales o glúteos</li>
+            <li>Recuperación con faja compresiva: 4–6 semanas</li>
+          </ul>
+        </div>
+      </div>
+      <div class="proc-card" onclick="toggleCard(this)">
+        <div class="proc-toggle">+</div><div class="proc-num">03</div>
+        <div class="proc-name">Rejuvenecimiento Facial Masculino</div>
+        <div class="proc-tag">Lifting · Blefaroplastia · Natural</div>
+        <p class="proc-short">Cirugía de rejuvenecimiento facial adaptada a la anatomía masculina. Resultados naturales sin feminizar los rasgos.</p>
+        <div class="proc-expand">
+          <p class="proc-expand-text">Las incisiones se adaptan a la posición de la patilla y el vello facial. El objetivo es rejuvenecer manteniendo los rasgos masculinos.</p>
+          <ul class="proc-expand-list">
+            <li>Incisiones adaptadas a la anatomía masculina y el vello facial</li>
+            <li>Objetivo: rejuvenecer sin feminizar ni alterar la expresión</li>
+            <li>Blefaroplastia, lifting de cuello y nanofat como combinación habitual</li>
+          </ul>
+        </div>
+      </div>
     </div>
+
   </div>
 </section>
 
@@ -706,8 +1123,21 @@
         <div class="hosp-cert reveal d4"><strong>Primer hospital privado universitario de Andalucía.</strong> Certificación ISO 9001 e ISO 14001 y acreditación Quality Healthcare (QH) del IDIS. Más de 24 millones de euros invertidos en modernización en la última década.</div>
       </div>
       <div class="reveal d2">
-        <div class="hospital-img-wrap">
-          <img src="https://www.grupohla.com/uploads/images/centros/inmaculada-granada.jpg" alt="Hospital HLA Universitario La Inmaculada, Granada" onerror="this.parentElement.innerHTML='<div class=\'hospital-img-ph\'><svg width=\'50\' height=\'50\' viewBox=\'0 0 50 50\' fill=\'none\' style=\'opacity:.18\'><rect x=\'10\' y=\'15\' width=\'30\' height=\'28\' stroke=\'#c8a45a\' stroke-width=\'1.5\'/><rect x=\'20\' y=\'25\' width=\'10\' height=\'18\' stroke=\'#c8a45a\' stroke-width=\'1.5\'/><path d=\'M25 5v10M20 10h10\' stroke=\'#c8a45a\' stroke-width=\'1.5\'/></svg><span>Hospital HLA La Inmaculada · Granada</span></div>'"/>
+        <div class="hospital-img-wrap" style="position:relative;overflow:hidden">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d797.2!2d-3.5968!3d37.1634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fcb0c6b6e2b5%3A0xa2c3d4e5f6a7b8c9!2sHospital%20HLA%20Universitario%20La%20Inmaculada!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses"
+            width="100%" height="340" style="border:0;display:block;filter:grayscale(20%) contrast(1.05)"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="Hospital HLA Universitario La Inmaculada, Granada"></iframe>
+          <a href="https://maps.google.com/?q=Hospital+HLA+La+Inmaculada,+Calle+Dr.+Alejandro+Otero+8,+Granada"
+             target="_blank" rel="noopener"
+             style="position:absolute;bottom:0;left:0;right:0;background:rgba(8,8,8,.82);color:var(--gris-c);
+                    padding:.75rem 1rem;font-size:.72rem;font-family:var(--fb);letter-spacing:.08em;
+                    display:flex;align-items:center;gap:.6rem;text-decoration:none;transition:background .3s">
+            <span style="color:var(--or);font-size:.9rem">📍</span>
+            Hospital HLA Universitario La Inmaculada · C/ Dr. Alejandro Otero, 8 · Granada
+            <span style="margin-left:auto;color:var(--or);font-size:.8rem">→ Ver en Maps</span>
+          </a>
         </div>
         <div class="hosp-stats">
           <div class="hosp-stat"><span class="hosp-stat-n">50<sup style="font-size:.9rem">+</sup></span><span class="hosp-stat-l">Años de historia</span></div>
@@ -745,6 +1175,57 @@
   </div>
 </section>
 
+<section id="faq" class="section section-alt">
+  <div class="section-inner">
+    <div class="s-eyebrow reveal">Preguntas Frecuentes</div>
+    <h2 class="s-title reveal d1">Todo lo que necesitas <em>saber antes</em></h2>
+    <p class="s-sub reveal d2" style="margin-bottom:3rem">Resolvemos las dudas más habituales. Si no encuentras la respuesta, escríbenos por WhatsApp o solicita una consulta.</p>
+    <div class="faq-list reveal d2">
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q"><span>¿La primera consulta tiene algún coste?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a">La primera consulta es completamente gratuita y sin compromiso. Puedes pedir cita a través del formulario o llamando al 644 188 639. Se realiza en el Hospital HLA Universitario La Inmaculada de Granada.</div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q"><span>¿Qué es el aumento de pecho sin cicatrices?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a">Es una técnica por vía axilar: el implante se coloca a través de una pequeña incisión en el pliegue de la axila, sin dejar ninguna cicatriz en el pecho. Es una técnica avanzada que muy pocos cirujanos realizan en España. La recuperación es equivalente a los abordajes clásicos.</div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q"><span>¿Cuánto tiempo dura la recuperación tras un lifting facial?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a">La recuperación de un lifting facial SMAS suele ser de 10 a 14 días para estar presentable en entornos sociales. El resultado definitivo se consolida a los 2–3 meses. El mini-lifting tiene una recuperación de 7–10 días.</div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q"><span>¿El nanofat es lo mismo que el ácido hialurónico?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a">No. El nanofat es grasa ultrafiltrada del propio paciente, rica en células madre, que mejora la calidad y luminosidad de la piel desde dentro. El ácido hialurónico es un relleno sintético que requiere retoques periódicos cada 6–12 meses. El nanofat es permanente y 100% natural.</div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q"><span>¿Qué garantías de seguridad ofrece el hospital?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a">Todas las intervenciones se realizan en el Hospital HLA Universitario La Inmaculada de Granada, con 7 quirófanos, 6 camas de UCI y 14 camas de reanimación. Es el primer hospital privado universitario acreditado de Andalucía, con certificación ISO 9001 y acreditación Quality Healthcare del IDIS.</div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q"><span>¿Puedo operarme si estoy dando el pecho o embarazada?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a">No. Cualquier cirugía electiva está contraindicada durante el embarazo y la lactancia. Se recomienda esperar al menos 6 meses tras el destete para intervenciones mamarias, y que el peso esté estabilizado antes de cualquier cirugía de contorno corporal.</div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q"><span>¿Cuánto tiempo duran los resultados de un lifting?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a">Un lifting facial SMAS bien ejecutado tiene una duración de entre 8 y 12 años. El proceso de envejecimiento continúa, pero siempre partiendo de una base rejuvenecida. El mini-lifting dura entre 4 y 6 años.</div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q"><span>¿Qué es el Gliding Brow Lift y en qué se diferencia del lifting clásico de cejas?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a">El Gliding Brow Lift es una técnica de elevación de cejas mínimamente invasiva que se realiza a través de pequeñas incisiones en el cuero cabelludo, sin grandes cortes. El lifting clásico requería una incisión coronal de oreja a oreja. El resultado del Gliding es igual de efectivo pero con cicatrices mínimas y recuperación más rápida.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <section id="contacto" class="section">
   <div class="section-inner">
     <div class="contact-grid">
@@ -763,10 +1244,7 @@
       <div class="reveal d2">
         <form id="form" action="https://formspree.io/f/maqlnqwy" method="POST">
           <input type="hidden" name="_subject" value="Nueva solicitud de consulta — Dr. Asenjo"/>
-          <div class="fr">
-            <div class="fg"><label class="fl">Nombre</label><input type="text" name="nombre" class="fi" placeholder="Tu nombre" required/></div>
-            <div class="fg"><label class="fl">Apellidos</label><input type="text" name="apellidos" class="fi" placeholder="Tus apellidos" required/></div>
-          </div>
+          <div class="fg"><label class="fl">Nombre y Apellidos</label><input type="text" name="nombre_completo" class="fi" placeholder="Tu nombre y apellidos" required/></div>
           <div class="fr">
             <div class="fg"><label class="fl">Email</label><input type="email" name="email" class="fi" placeholder="tu@email.com" required/></div>
             <div class="fg"><label class="fl">Teléfono</label><input type="tel" name="telefono" class="fi" placeholder="600 000 000"/></div>
@@ -800,11 +1278,11 @@
       </div>
       <div>
         <div class="fct">Mama</div>
-        <ul class="fcl"><li><a href="#procedimientos">Aumento sin cicatrices</a></li><li><a href="#procedimientos">Aumento híbrido</a></li><li><a href="#procedimientos">Mastopexia</a></li><li><a href="#procedimientos">Recambio implantes</a></li></ul>
+        <ul class="fcl"><li><a href="/aumento-pecho-sin-cicatrices/">Aumento sin cicatrices</a></li><li><a href="/aumento-pecho-sin-cicatrices/">Aumento híbrido</a></li><li><a href="#procedimientos">Mastopexia</a></li><li><a href="#procedimientos">Recambio implantes</a></li></ul>
       </div>
       <div>
         <div class="fct">Cirugía Facial</div>
-        <ul class="fcl"><li><a href="#procedimientos">Lifting Facial</a></li><li><a href="#procedimientos">Gliding Brow Lift</a></li><li><a href="#procedimientos">Foxy Eyes</a></li><li><a href="#procedimientos">Lipofilling / Nanofat</a></li></ul>
+        <ul class="fcl"><li><a href="/lifting-facial-granada/">Lifting Facial</a></li><li><a href="/gliding-brow-lift-granada/">Gliding Brow Lift</a></li><li><a href="/foxy-eyes-granada/">Foxy Eyes</a></li><li><a href="/lipofilling-nanofat-granada/">Lipofilling / Nanofat</a></li></ul>
       </div>
       <div>
         <div class="fct">La Clínica</div>
@@ -925,6 +1403,53 @@
     entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('vis'); });
   }, {threshold: 0.3});
   document.querySelectorAll('.paso').forEach(el => pasoObs.observe(el));
+
+  // ── FAQ ──
+  function toggleFaq(item) {
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+    if(!isOpen) item.classList.add('open');
+  }
+
+  // ── CONTADOR ANIMADO EN HERO ──
+  function animateHeroStats() {
+    const stats = document.querySelectorAll('#hero-stats .stat-n');
+    stats.forEach(el => {
+      const count = parseInt(el.dataset.count);
+      const suffix = el.dataset.suffix || '';
+      const text = el.dataset.text;
+      if(text) {
+        // Efecto de escritura para texto (SECPRE, ISAPS)
+        let i = 0;
+        el.textContent = '';
+        const interval = setInterval(() => {
+          el.textContent = text.slice(0, ++i);
+          if(i >= text.length) clearInterval(interval);
+        }, 80);
+      } else if(!isNaN(count)) {
+        // Contador numérico
+        let start = 0;
+        const duration = 1200;
+        const step = duration / count;
+        const timer = setInterval(() => {
+          start++;
+          el.innerHTML = start + '<sup>' + suffix + '</sup>';
+          if(start >= count) clearInterval(timer);
+        }, step);
+      }
+    });
+  }
+
+  // Lanzar animación cuando el hero-stats entra en pantalla
+  const heroStatsObs = new IntersectionObserver(([entry]) => {
+    if(entry.isIntersecting) {
+      animateHeroStats();
+      heroStatsObs.disconnect();
+    }
+  }, {threshold: 0.5});
+  const heroStatsEl = document.getElementById('hero-stats');
+  if(heroStatsEl) heroStatsObs.observe(heroStatsEl);
+
 
 </script>
 </body>

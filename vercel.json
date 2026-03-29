@@ -1,0 +1,13 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/lifting-facial-granada", "destination": "/lifting-facial-granada.html" },
+    { "source": "/aumento-pecho-sin-cicatrices", "destination": "/aumento-pecho-sin-cicatrices.html" },
+    { "source": "/blefaroplastia-granada", "destination": "/blefaroplastia-granada.html" },
+    { "source": "/lipoescultura-granada", "destination": "/lipoescultura-granada.html" },
+    { "source": "/foxy-eyes-granada", "destination": "/foxy-eyes-granada.html" },
+    { "source": "/gliding-brow-lift-granada", "destination": "/gliding-brow-lift-granada.html" },
+    { "source": "/lipofilling-nanofat-granada", "destination": "/lipofilling-nanofat-granada.html" }
+  ]
+}

@@ -220,8 +220,8 @@
     /* HERO */
     #hero{min-height:100svh;display:flex;align-items:center;position:relative;overflow:hidden;padding:8rem 5vw 5rem}
     .hero-bg{position:absolute;inset:0;background:#1C1C1C}
-    .hero-bg-img{position:absolute;inset:0;background:url('IMG_8298.jpeg') 70% center/cover no-repeat;opacity:.68}
-    .hero-bg-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(28,28,28,.92) 0%,rgba(28,28,28,.75) 35%,rgba(28,28,28,.25) 65%,rgba(28,28,28,.1) 100%)}
+    .hero-bg-img{position:absolute;inset:0;background:url('IMG_8298.jpeg') 78% center/cover no-repeat;opacity:.7}
+    .hero-bg-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(28,28,28,.94) 0%,rgba(28,28,28,.82) 38%,rgba(28,28,28,.3) 62%,rgba(28,28,28,.05) 100%)}
     .hero-vline{position:absolute;left:5vw;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,transparent 10%,rgba(210,165,84,.4) 40%,rgba(210,165,84,.4) 60%,transparent 90%)}
     .hero-content{position:relative;z-index:2;max-width:660px}
     .eyebrow{display:inline-flex;align-items:center;gap:.9rem;font-size:.62rem;font-weight:500;letter-spacing:.35em;text-transform:uppercase;color:var(--or);margin-bottom:2rem}
@@ -458,6 +458,15 @@
       .eyebrow{font-size:.52rem;letter-spacing:.18em;flex-wrap:wrap;gap:.4rem}
       .eyebrow::before{display:none}
     }
+
+    @media(max-width:768px){
+      .hero-bg-img{opacity:.35!important}
+      .hero-bg-overlay{background:linear-gradient(180deg,rgba(28,28,28,.96) 0%,rgba(28,28,28,.92) 60%,rgba(28,28,28,.7) 100%)!important}
+      #hero{min-height:auto;padding:7rem 5vw 3rem}
+      .hero-photo-mobile{display:block}
+      .hero-stats{display:none}
+    }
+    .hero-photo-mobile{display:none;width:100%;aspect-ratio:3/4;object-fit:cover;object-position:70% center;max-height:55vw}
     @media(max-width:768px){
       body{font-size:17px}
       .s-title{font-size:clamp(1.9rem,6.5vw,2.5rem)}
@@ -547,6 +556,10 @@
     .hsb-l{font-size:.48rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(245,238,230,.5);text-align:center}
     .hsb-sep{width:1px;height:28px;background:rgba(210,165,84,.2);flex-shrink:0}
     @media(min-width:900px){.hero-stats-bar{display:none}}
+
+    .hero-mobile-block{display:none;background:var(--noir)}
+    @media(max-width:768px){.hero-mobile-block{display:block}}
+    @media(min-width:769px){.hero-stats-bar{display:none}}
   </style>
   <script type="application/ld+json">
   {
@@ -620,12 +633,15 @@
   </div>
   <div class="scroll-hint"><div class="scroll-hint-line"></div>Scroll</div>
 </section>
-<div class="hero-stats-bar">
-  <div class="hsb-item"><span class="hsb-n" data-count="7" data-suffix="+">7<sup>+</sup></span><span class="hsb-l">Años de experiencia</span></div>
-  <div class="hsb-sep"></div>
-  <div class="hsb-item"><span class="hsb-n" style="font-size:1.1rem;letter-spacing:.05em">SECPRE</span><span class="hsb-l">Sociedad Española</span></div>
-  <div class="hsb-sep"></div>
-  <div class="hsb-item"><span class="hsb-n" style="font-size:1.1rem;letter-spacing:.05em">ISAPS</span><span class="hsb-l">Sociedad Internacional</span></div>
+<div class="hero-mobile-block">
+  <img src="IMG_8298.jpeg" alt="Dr. Asenjo cirujano plástico Granada" class="hero-photo-mobile" style="object-position:60% center"/>
+  <div class="hero-stats-bar">
+    <div class="hsb-item"><span class="hsb-n">7<sup>+</sup></span><span class="hsb-l">Años de experiencia</span></div>
+    <div class="hsb-sep"></div>
+    <div class="hsb-item"><span class="hsb-n" style="font-size:1.1rem;letter-spacing:.05em">SECPRE</span><span class="hsb-l">Sociedad Española</span></div>
+    <div class="hsb-sep"></div>
+    <div class="hsb-item"><span class="hsb-n" style="font-size:1.1rem;letter-spacing:.05em">ISAPS</span><span class="hsb-l">Sociedad Internacional</span></div>
+  </div>
 </div>
 
 <section id="sobre" class="section section-alt">
@@ -1165,14 +1181,21 @@
         <div class="hosp-cert reveal d4"><strong>Primer hospital privado universitario de Andalucía.</strong> Certificación ISO 9001 e ISO 14001 y acreditación Quality Healthcare (QH) del IDIS. Más de 24 millones de euros invertidos en modernización en la última década.</div>
       </div>
       <div class="reveal d2">
-        <div class="hospital-img-wrap" style="position:relative;overflow:hidden;aspect-ratio:4/3">
-          <img src="IMG_8447.jpeg" alt="Dr. Asenjo en Hospital HLA La Inmaculada Granada" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;filter:brightness(.75) saturate(.9)"/>
-          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(28,28,28,.85) 0%,rgba(28,28,28,.2) 60%,transparent 100%)"></div>
-          <a href="https://maps.google.com/?q=Hospital+HLA+La+Inmaculada,+Calle+Dr.+Alejandro+Otero+8,+Granada" target="_blank" rel="noopener" style="position:absolute;bottom:0;left:0;right:0;padding:1.2rem 1.4rem;display:flex;align-items:center;gap:.6rem;text-decoration:none;color:var(--crema)">
-            <span style="color:var(--or);font-size:1rem">📍</span>
-            <span style="font-family:var(--fb);font-size:.72rem;letter-spacing:.08em">Hospital HLA Universitario La Inmaculada · Granada</span>
-            <span style="margin-left:auto;color:var(--or);font-size:.75rem;font-family:var(--fb);letter-spacing:.1em">→ Maps</span>
-          </a>
+        <div style="display:flex;flex-direction:column;gap:1px">
+          <div class="hospital-img-wrap" style="position:relative;overflow:hidden;aspect-ratio:16/9">
+            <img src="IMG_8447.jpeg" alt="Dr. Asenjo en Hospital HLA La Inmaculada Granada" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;filter:brightness(.75) saturate(.9)"/>
+            <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(28,28,28,.7) 0%,transparent 60%)"></div>
+            <div style="position:absolute;bottom:.8rem;left:1rem;font-family:var(--fd);font-size:1.1rem;font-weight:300;color:var(--crema)">Hospital HLA Universitario <em style="color:var(--or)">La Inmaculada</em></div>
+          </div>
+          <div style="width:100%;height:220px;overflow:hidden;position:relative">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d797!2d-3.5968!3d37.1634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fcb0b52e28f1%3A0x8c48c76e5a0d6e2a!2sHospital%20HLA%20Universitario%20La%20Inmaculada!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses"
+              width="100%" height="220" style="border:0;display:block;filter:grayscale(15%) contrast(1.05)" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Hospital HLA La Inmaculada Granada"></iframe>
+            <a href="https://maps.google.com/?q=Hospital+HLA+La+Inmaculada,+Calle+Dr.+Alejandro+Otero+8,+Granada" target="_blank" rel="noopener" style="position:absolute;bottom:0;left:0;right:0;background:rgba(28,28,28,.82);padding:.6rem 1rem;display:flex;align-items:center;gap:.5rem;text-decoration:none;color:var(--crema)">
+              <span style="color:var(--or)">📍</span>
+              <span style="font-family:var(--fb);font-size:.68rem;letter-spacing:.06em">C/ Dr. Alejandro Otero, 8 · Granada</span>
+              <span style="margin-left:auto;color:var(--or);font-size:.7rem;font-family:var(--fb)">→ Cómo llegar</span>
+            </a>
+          </div>
         </div>
         <div class="hosp-stats">
           <div class="hosp-stat"><span class="hosp-stat-n">50<sup style="font-size:.9rem">+</sup></span><span class="hosp-stat-l">Años de historia</span></div>
@@ -1190,15 +1213,24 @@
     <div class="s-eyebrow reveal">El Cirujano en su entorno</div>
     <h2 class="s-title reveal d1">Trabajo diario y <em>entorno profesional</em></h2>
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--blanco-4);margin-top:3rem" class="reveal d2">
-      <div style="overflow:hidden;aspect-ratio:3/4">
+      <div style="overflow:hidden;aspect-ratio:3/4;cursor:zoom-in" onclick="openLightbox(0)">
         <img src="IMG_8469.jpeg" alt="Dr. Asenjo cirujano plástico Granada" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;transition:transform .6s ease" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
       </div>
-      <div style="overflow:hidden;aspect-ratio:3/4">
+      <div style="overflow:hidden;aspect-ratio:3/4;cursor:zoom-in" onclick="openLightbox(1)">
         <img src="IMG_8412.jpeg" alt="Dr. Asenjo en el hospital" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;transition:transform .6s ease" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
       </div>
-      <div style="overflow:hidden;aspect-ratio:3/4">
+      <div style="overflow:hidden;aspect-ratio:3/4;cursor:zoom-in" onclick="openLightbox(2)">
         <img src="IMG_8298.jpeg" alt="Dr. Asenjo quirófano" style="width:100%;height:100%;object-fit:cover;object-position:center 30%;display:block;transition:transform .6s ease" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
       </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" style="display:none;position:fixed;inset:0;z-index:999;background:rgba(0,0,0,.95);align-items:center;justify-content:center;padding:1rem" onclick="closeLightbox(event)">
+      <button onclick="prevPhoto()" style="position:fixed;left:1rem;top:50%;transform:translateY(-50%);background:rgba(210,165,84,.15);border:1px solid rgba(210,165,84,.3);color:var(--or);width:44px;height:44px;font-size:1.4rem;cursor:pointer;z-index:1000;display:flex;align-items:center;justify-content:center">‹</button>
+      <img id="lb-img" src="" alt="" style="max-height:90vh;max-width:90vw;object-fit:contain;display:block;user-select:none"/>
+      <button onclick="nextPhoto()" style="position:fixed;right:1rem;top:50%;transform:translateY(-50%);background:rgba(210,165,84,.15);border:1px solid rgba(210,165,84,.3);color:var(--or);width:44px;height:44px;font-size:1.4rem;cursor:pointer;z-index:1000;display:flex;align-items:center;justify-content:center">›</button>
+      <button onclick="closeLightbox()" style="position:fixed;top:1rem;right:1rem;background:rgba(210,165,84,.15);border:1px solid rgba(210,165,84,.3);color:var(--or);width:36px;height:36px;font-size:1.1rem;cursor:pointer;z-index:1000;display:flex;align-items:center;justify-content:center">✕</button>
+      <div id="lb-dots" style="position:fixed;bottom:1.5rem;left:50%;transform:translateX(-50%);display:flex;gap:.6rem"></div>
     </div>
   </div>
 </section>
@@ -1510,6 +1542,56 @@
   }, {threshold: 0.5});
   const heroStatsEl = document.getElementById('hero-stats');
   if(heroStatsEl) heroStatsObs.observe(heroStatsEl);
+
+
+  // ── LIGHTBOX GALERÍA ──
+  const lbPhotos = ['IMG_8469.jpeg','IMG_8412.jpeg','IMG_8298.jpeg'];
+  let lbCurrent = 0;
+
+  function openLightbox(idx) {
+    lbCurrent = idx;
+    const lb = document.getElementById('lightbox');
+    lb.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+    updateLightbox();
+  }
+
+  function closeLightbox(e) {
+    if(e && e.target !== document.getElementById('lightbox') && e.type !== 'click') return;
+    if(e && e.currentTarget && e.currentTarget.tagName === 'BUTTON') {
+      // botón de cerrar
+    } else if(e && e.target !== document.getElementById('lightbox')) return;
+    document.getElementById('lightbox').style.display = 'none';
+    document.body.style.overflow = '';
+  }
+
+  function prevPhoto() {
+    lbCurrent = (lbCurrent - 1 + lbPhotos.length) % lbPhotos.length;
+    updateLightbox();
+  }
+
+  function nextPhoto() {
+    lbCurrent = (lbCurrent + 1) % lbPhotos.length;
+    updateLightbox();
+  }
+
+  function updateLightbox() {
+    document.getElementById('lb-img').src = lbPhotos[lbCurrent];
+    const dots = document.getElementById('lb-dots');
+    dots.innerHTML = lbPhotos.map((_, i) =>
+      `<div onclick="lbCurrent=${i};updateLightbox()" style="width:8px;height:8px;border-radius:50%;background:${i===lbCurrent?'var(--or)':'rgba(245,238,230,.3)'};cursor:pointer;transition:background .3s"></div>`
+    ).join('');
+  }
+
+  // Cerrar lightbox con tecla ESC y navegar con flechas
+  document.addEventListener('keydown', e => {
+    const lb = document.getElementById('lightbox');
+    if(lb.style.display === 'flex') {
+      if(e.key === 'Escape') { lb.style.display='none'; document.body.style.overflow=''; }
+      if(e.key === 'ArrowLeft') prevPhoto();
+      if(e.key === 'ArrowRight') nextPhoto();
+    }
+  });
 
 
 </script>

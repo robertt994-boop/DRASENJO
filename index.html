@@ -220,8 +220,8 @@
     /* HERO */
     #hero{min-height:100svh;display:flex;align-items:center;position:relative;overflow:hidden;padding:8rem 5vw 5rem}
     .hero-bg{position:absolute;inset:0;background:#1C1C1C}
-    .hero-bg-img{position:absolute;inset:0;background:url('IMG_8298.jpeg') center 20%/cover no-repeat;opacity:.62}
-    .hero-bg-overlay{position:absolute;inset:0;background:linear-gradient(105deg,rgba(28,28,28,.88) 40%,rgba(28,28,28,.45) 100%)}
+    .hero-bg-img{position:absolute;inset:0;background:url('IMG_8298.jpeg') 70% center/cover no-repeat;opacity:.68}
+    .hero-bg-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(28,28,28,.92) 0%,rgba(28,28,28,.75) 35%,rgba(28,28,28,.25) 65%,rgba(28,28,28,.1) 100%)}
     .hero-vline{position:absolute;left:5vw;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,transparent 10%,rgba(210,165,84,.4) 40%,rgba(210,165,84,.4) 60%,transparent 90%)}
     .hero-content{position:relative;z-index:2;max-width:660px}
     .eyebrow{display:inline-flex;align-items:center;gap:.9rem;font-size:.62rem;font-weight:500;letter-spacing:.35em;text-transform:uppercase;color:var(--or);margin-bottom:2rem}
@@ -664,14 +664,6 @@
     </div>
   </div>
 </section>
-
-<!-- Barra sticky de procedimientos -->
-<div id="proc-sticky">
-  <button class="sticky-tab active" onclick="showTab('mama',this,true)">Mama</button>
-  <button class="sticky-tab" onclick="showTab('facial',this,true)">Facial</button>
-  <button class="sticky-tab" onclick="showTab('cuerpo',this,true)">Corporal</button>
-  <button class="sticky-tab" onclick="showTab('masculina',this,true)">Masculina</button>
-</div>
 
 <section id="procedimientos" class="section">
   <div class="section-inner">
@@ -1193,31 +1185,6 @@
   </div>
 </section>
 
-<section id="proceso" class="section">
-  <div class="section-inner">
-    <div class="s-eyebrow reveal">Tu Camino</div>
-    <h2 class="s-title reveal d1">El proceso, <em>paso a paso</em></h2>
-    <div class="proceso-steps">
-      <div class="paso reveal"><div class="paso-num">01</div><div class="paso-name">Primera Consulta</div><p class="paso-desc">Reunión confidencial y sin compromiso. Se valora el caso, se explican las opciones con sus resultados y riesgos reales, y se resuelven todas las dudas. Sin presión de ningún tipo.</p></div>
-      <div class="paso reveal d1"><div class="paso-num">02</div><div class="paso-name">Plan Personalizado</div><p class="paso-desc">Plan quirúrgico individualizado con simulación digital cuando es posible. Información detallada sobre la técnica, la anestesia, la recuperación esperada y el resultado realista.</p></div>
-      <div class="paso reveal d2"><div class="paso-num">03</div><div class="paso-name">La Intervención</div><p class="paso-desc">Cirugía en el HLA Universitario Inmaculada con anestesista propio y enfermería especializada. UCI y reanimación disponibles. Máxima seguridad en cada fase.</p></div>
-      <div class="paso reveal d3"><div class="paso-num">04</div><div class="paso-name">Seguimiento Total</div><p class="paso-desc">Acompañamiento durante toda la recuperación. Revisiones periódicas, acceso directo al equipo médico y seguimiento fotográfico hasta la consolidación definitiva del resultado.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="testimonios" class="section section-alt">
-  <div class="section-inner">
-    <div class="s-eyebrow reveal">Testimonios</div>
-    <h2 class="s-title reveal d1">La experiencia de <em>nuestros pacientes</em></h2>
-    <div class="test-grid">
-      <div class="test-card reveal"><div class="test-q">"</div><p class="test-txt">El Dr. Asenjo dedicó mucho tiempo a explicarme exactamente qué iba a hacer y por qué. Eso me generó una confianza total. El resultado es completamente natural — nadie nota que me he operado.</p><div class="test-author"><div class="test-av">M.L</div><div><div class="test-stars">★★★★★</div><div class="test-name">María L.</div><div class="test-proc">Lifting facial</div></div></div></div>
-      <div class="test-card reveal d1"><div class="test-q">"</div><p class="test-txt">Me operé el pecho por vía axilar y no tengo ninguna cicatriz visible. El resultado es totalmente natural. El seguimiento postoperatorio fue impecable y en todo momento me sentí acompañada.</p><div class="test-author"><div class="test-av">A.G</div><div><div class="test-stars">★★★★★</div><div class="test-name">Ana G.</div><div class="test-proc">Aumento sin cicatrices</div></div></div></div>
-      <div class="test-card reveal d2"><div class="test-q">"</div><p class="test-txt">La lipoescultura con transferencia a glúteos cambió completamente mi silueta. Lo más importante es que el resultado es natural. Muy contenta con todo el proceso y el equipo del Dr. Asenjo.</p><div class="test-author"><div class="test-av">C.M</div><div><div class="test-stars">★★★★★</div><div class="test-name">Carmen M.</div><div class="test-proc">Lipoescultura con lipofilling</div></div></div></div>
-    </div>
-  </div>
-</section>
-
 <section id="galeria" class="section section-alt">
   <div class="section-inner">
     <div class="s-eyebrow reveal">El Cirujano en su entorno</div>
@@ -1232,6 +1199,19 @@
       <div style="overflow:hidden;aspect-ratio:3/4">
         <img src="IMG_8298.jpeg" alt="Dr. Asenjo quirófano" style="width:100%;height:100%;object-fit:cover;object-position:center 30%;display:block;transition:transform .6s ease" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
       </div>
+    </div>
+  </div>
+</section>
+
+<section id="proceso" class="section">
+  <div class="section-inner">
+    <div class="s-eyebrow reveal">Tu Camino</div>
+    <h2 class="s-title reveal d1">El proceso, <em>paso a paso</em></h2>
+    <div class="proceso-steps">
+      <div class="paso reveal"><div class="paso-num">01</div><div class="paso-name">Primera Consulta</div><p class="paso-desc">Reunión confidencial y sin compromiso. Se valora el caso, se explican las opciones con sus resultados y riesgos reales, y se resuelven todas las dudas. Sin presión de ningún tipo.</p></div>
+      <div class="paso reveal d1"><div class="paso-num">02</div><div class="paso-name">Plan Personalizado</div><p class="paso-desc">Plan quirúrgico individualizado con simulación digital cuando es posible. Información detallada sobre la técnica, la anestesia, la recuperación esperada y el resultado realista.</p></div>
+      <div class="paso reveal d2"><div class="paso-num">03</div><div class="paso-name">La Intervención</div><p class="paso-desc">Cirugía en el HLA Universitario Inmaculada con anestesista propio y enfermería especializada. UCI y reanimación disponibles. Máxima seguridad en cada fase.</p></div>
+      <div class="paso reveal d3"><div class="paso-num">04</div><div class="paso-name">Seguimiento Total</div><p class="paso-desc">Acompañamiento durante toda la recuperación. Revisiones periódicas, acceso directo al equipo médico y seguimiento fotográfico hasta la consolidación definitiva del resultado.</p></div>
     </div>
   </div>
 </section>
@@ -1287,6 +1267,18 @@
   </div>
 </section>
 
+<section id="testimonios" class="section section-alt">
+  <div class="section-inner">
+    <div class="s-eyebrow reveal">Testimonios</div>
+    <h2 class="s-title reveal d1">La experiencia de <em>nuestros pacientes</em></h2>
+    <div class="test-grid">
+      <div class="test-card reveal"><div class="test-q">"</div><p class="test-txt">El Dr. Asenjo dedicó mucho tiempo a explicarme exactamente qué iba a hacer y por qué. Eso me generó una confianza total. El resultado es completamente natural — nadie nota que me he operado.</p><div class="test-author"><div class="test-av">M.L</div><div><div class="test-stars">★★★★★</div><div class="test-name">María L.</div><div class="test-proc">Lifting facial</div></div></div></div>
+      <div class="test-card reveal d1"><div class="test-q">"</div><p class="test-txt">Me operé el pecho por vía axilar y no tengo ninguna cicatriz visible. El resultado es totalmente natural. El seguimiento postoperatorio fue impecable y en todo momento me sentí acompañada.</p><div class="test-author"><div class="test-av">A.G</div><div><div class="test-stars">★★★★★</div><div class="test-name">Ana G.</div><div class="test-proc">Aumento sin cicatrices</div></div></div></div>
+      <div class="test-card reveal d2"><div class="test-q">"</div><p class="test-txt">La lipoescultura con transferencia a glúteos cambió completamente mi silueta. Lo más importante es que el resultado es natural. Muy contenta con todo el proceso y el equipo del Dr. Asenjo.</p><div class="test-author"><div class="test-av">C.M</div><div><div class="test-stars">★★★★★</div><div class="test-name">Carmen M.</div><div class="test-proc">Lipoescultura con lipofilling</div></div></div></div>
+    </div>
+  </div>
+</section>
+
 <section id="contacto" class="section">
   <div class="section-inner">
     <div class="contact-grid">
@@ -1329,6 +1321,14 @@
     </div>
   </div>
 </section>
+
+<!-- Barra sticky de procedimientos -->
+<div id="proc-sticky">
+  <button class="sticky-tab active" onclick="showTab('mama',this,true)">Mama</button>
+  <button class="sticky-tab" onclick="showTab('facial',this,true)">Facial</button>
+  <button class="sticky-tab" onclick="showTab('cuerpo',this,true)">Corporal</button>
+  <button class="sticky-tab" onclick="showTab('masculina',this,true)">Masculina</button>
+</div>
 
 <footer>
   <div class="footer-inner">

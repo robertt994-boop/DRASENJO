@@ -220,8 +220,8 @@
     /* HERO */
     #hero{min-height:100svh;display:flex;align-items:center;position:relative;overflow:hidden;padding:8rem 5vw 5rem}
     .hero-bg{position:absolute;inset:0;background:#1C1C1C}
-    .hero-bg-img{position:absolute;inset:0;background:url('IMG_8298.jpeg') center center/cover no-repeat;opacity:.45}
-    .hero-bg-overlay{position:absolute;inset:0;background:linear-gradient(105deg,rgba(28,28,28,.92) 45%,rgba(28,28,28,.55) 100%)}
+    .hero-bg-img{position:absolute;inset:0;background:url('IMG_8298.jpeg') center 20%/cover no-repeat;opacity:.62}
+    .hero-bg-overlay{position:absolute;inset:0;background:linear-gradient(105deg,rgba(28,28,28,.88) 40%,rgba(28,28,28,.45) 100%)}
     .hero-vline{position:absolute;left:5vw;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,transparent 10%,rgba(210,165,84,.4) 40%,rgba(210,165,84,.4) 60%,transparent 90%)}
     .hero-content{position:relative;z-index:2;max-width:660px}
     .eyebrow{display:inline-flex;align-items:center;gap:.9rem;font-size:.62rem;font-weight:500;letter-spacing:.35em;text-transform:uppercase;color:var(--or);margin-bottom:2rem}
@@ -417,7 +417,11 @@
     @media(max-width:640px){
       .section{padding:5rem 5vw}
       #hero{padding:7rem 5vw 4rem}
-      .hero-stats{display:none}
+      .hero-stats{display:flex;flex-direction:row;position:static;gap:0;margin-top:2.5rem;border-top:1px solid rgba(210,165,84,.2);padding-top:1.5rem}
+      .hero-stats .stat{flex:1;text-align:center;padding:.5rem}
+      .hero-stats .stat-n{font-size:1.6rem}
+      .hero-stats .stat-n sup{font-size:.7rem}
+      .hero-stats .stat-l{font-size:.52rem;letter-spacing:.12em}
       .proc-panel.active{display:grid;grid-template-columns:1fr;gap:1px;background:rgba(255,255,255,.03)}
       .proc-highlight{grid-column:1 / -1}
       .proc-hl-grid{grid-template-columns:1fr}
@@ -601,7 +605,7 @@
   <div class="section-inner">
     <div class="sobre-grid">
       <div class="sobre-img-wrap reveal">
-        <img src="IMG_8469.jpeg" alt="Dr. Roberto Asenjo Medina — Cirujano Plástico Granada" style="width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center top;display:block;border:1px solid var(--blanco-4)"/>
+        <img src="IMG_8421.jpeg" alt="Dr. Roberto Asenjo Medina — Cirujano Plástico Granada" style="width:100%;aspect-ratio:3/4;object-fit:cover;object-position:25% top;display:block;border:1px solid var(--blanco-4)"/>
         <div class="sobre-deco"></div>
         <div class="sobre-badge"><span class="sobre-badge-n">7<sup style="font-size:1rem">+</sup></span><span class="sobre-badge-t">Años de<br>experiencia</span></div>
       </div>
@@ -1142,20 +1146,13 @@
         <div class="hosp-cert reveal d4"><strong>Primer hospital privado universitario de Andalucía.</strong> Certificación ISO 9001 e ISO 14001 y acreditación Quality Healthcare (QH) del IDIS. Más de 24 millones de euros invertidos en modernización en la última década.</div>
       </div>
       <div class="reveal d2">
-        <div class="hospital-img-wrap" style="position:relative;overflow:hidden">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d797.2!2d-3.5968!3d37.1634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fcb0c6b6e2b5%3A0xa2c3d4e5f6a7b8c9!2sHospital%20HLA%20Universitario%20La%20Inmaculada!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses"
-            width="100%" height="340" style="border:0;display:block;filter:grayscale(20%) contrast(1.05)"
-            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-            title="Hospital HLA Universitario La Inmaculada, Granada"></iframe>
-          <a href="https://maps.google.com/?q=Hospital+HLA+La+Inmaculada,+Calle+Dr.+Alejandro+Otero+8,+Granada"
-             target="_blank" rel="noopener"
-             style="position:absolute;bottom:0;left:0;right:0;background:rgba(8,8,8,.82);color:var(--gris-c);
-                    padding:.75rem 1rem;font-size:.72rem;font-family:var(--fb);letter-spacing:.08em;
-                    display:flex;align-items:center;gap:.6rem;text-decoration:none;transition:background .3s">
-            <span style="color:var(--or);font-size:.9rem">📍</span>
-            Hospital HLA Universitario La Inmaculada · C/ Dr. Alejandro Otero, 8 · Granada
-            <span style="margin-left:auto;color:var(--or);font-size:.8rem">→ Ver en Maps</span>
+        <div class="hospital-img-wrap" style="position:relative;overflow:hidden;aspect-ratio:4/3">
+          <img src="IMG_8447.jpeg" alt="Dr. Asenjo en Hospital HLA La Inmaculada Granada" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;filter:brightness(.75) saturate(.9)"/>
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(28,28,28,.85) 0%,rgba(28,28,28,.2) 60%,transparent 100%)"></div>
+          <a href="https://maps.google.com/?q=Hospital+HLA+La+Inmaculada,+Calle+Dr.+Alejandro+Otero+8,+Granada" target="_blank" rel="noopener" style="position:absolute;bottom:0;left:0;right:0;padding:1.2rem 1.4rem;display:flex;align-items:center;gap:.6rem;text-decoration:none;color:var(--crema)">
+            <span style="color:var(--or);font-size:1rem">📍</span>
+            <span style="font-family:var(--fb);font-size:.72rem;letter-spacing:.08em">Hospital HLA Universitario La Inmaculada · Granada</span>
+            <span style="margin-left:auto;color:var(--or);font-size:.75rem;font-family:var(--fb);letter-spacing:.1em">→ Maps</span>
           </a>
         </div>
         <div class="hosp-stats">
@@ -1199,14 +1196,14 @@
     <div class="s-eyebrow reveal">El Cirujano en su entorno</div>
     <h2 class="s-title reveal d1">Trabajo diario y <em>entorno profesional</em></h2>
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--blanco-4);margin-top:3rem" class="reveal d2">
-      <div style="overflow:hidden;aspect-ratio:4/3">
-        <img src="IMG_8447.jpeg" alt="Dr. Asenjo en consulta" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s ease" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
+      <div style="overflow:hidden;aspect-ratio:3/4">
+        <img src="IMG_8469.jpeg" alt="Dr. Asenjo cirujano plástico Granada" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;transition:transform .6s ease" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
       </div>
-      <div style="overflow:hidden;aspect-ratio:4/3">
-        <img src="IMG_8421.jpeg" alt="Dr. Asenjo en el hospital" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;transition:transform .6s ease" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
+      <div style="overflow:hidden;aspect-ratio:3/4">
+        <img src="IMG_8412.jpeg" alt="Dr. Asenjo en el hospital" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;transition:transform .6s ease" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
       </div>
-      <div style="overflow:hidden;aspect-ratio:4/3">
-        <img src="IMG_8412.jpeg" alt="Dr. Asenjo cirujano plástico Granada" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;transition:transform .6s ease" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
+      <div style="overflow:hidden;aspect-ratio:3/4">
+        <img src="IMG_8298.jpeg" alt="Dr. Asenjo quirófano" style="width:100%;height:100%;object-fit:cover;object-position:center 30%;display:block;transition:transform .6s ease" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"/>
       </div>
     </div>
   </div>

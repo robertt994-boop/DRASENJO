@@ -466,7 +466,6 @@
       .hero-photo-mobile{display:block}
       .hero-stats{display:none}
     }
-    .hero-photo-mobile{display:none;width:100%;aspect-ratio:3/4;object-fit:cover;object-position:70% center;max-height:55vw}
     @media(max-width:768px){
       body{font-size:17px}
       .s-title{font-size:clamp(1.9rem,6.5vw,2.5rem)}
@@ -560,6 +559,41 @@
     .hero-mobile-block{display:none;background:var(--noir)}
     @media(max-width:768px){.hero-mobile-block{display:block}}
     @media(min-width:769px){.hero-stats-bar{display:none}}
+
+    /* ── FOTO HERO MÓVIL ── */
+    .hero-foto-movil{display:none}
+    @media(max-width:768px){
+      .hero-foto-movil{
+        display:block;
+        width:calc(100% + 10vw);
+        margin:1.8rem -5vw;
+        position:relative;
+        overflow:hidden;
+      }
+      .hero-foto-movil img{
+        width:100%;
+        height:70vw;
+        object-fit:cover;
+        object-position:60% 25%;
+        display:block;
+      }
+      .hero-foto-movil::after{
+        content:'';
+        position:absolute;
+        inset:0;
+        background:linear-gradient(
+          to bottom,
+          rgba(28,28,28,.55) 0%,
+          transparent 25%,
+          transparent 70%,
+          rgba(28,28,28,.65) 100%
+        );
+      }
+      /* En móvil ocultar la foto de fondo (usar foto real en su lugar) */
+      .hero-bg-img{opacity:.15!important}
+      .hero-bg-overlay{background:rgba(28,28,28,.85)!important}
+      #hero{padding-bottom:2rem}
+    }
   </style>
   <script type="application/ld+json">
   {
@@ -620,6 +654,9 @@
   <div class="hero-content">
     <div class="eyebrow" style="color:var(--or)">Dr. Roberto Asenjo Medina · Cirujano Plástico · Granada</div>
     <h1 class="hero-title">El arte de <em>realzar</em><br>tu belleza natural</h1>
+    <div class="hero-foto-movil">
+      <img src="IMG_8298.jpeg" alt="Dr. Roberto Asenjo — Cirujano Plástico Granada" />
+    </div>
     <p class="hero-sub">Resultados naturales y armoniosos para cada paciente. Técnicas de vanguardia con la sensibilidad artística que cada caso requiere.</p>
     <div class="hero-actions">
       <a href="#contacto" class="btn-gold">Solicitar Primera Consulta</a>
@@ -634,7 +671,6 @@
   <div class="scroll-hint"><div class="scroll-hint-line"></div>Scroll</div>
 </section>
 <div class="hero-mobile-block">
-  <img src="IMG_8298.jpeg" alt="Dr. Asenjo cirujano plástico Granada" class="hero-photo-mobile" style="object-position:60% center"/>
   <div class="hero-stats-bar">
     <div class="hsb-item"><span class="hsb-n">7<sup>+</sup></span><span class="hsb-l">Años de experiencia</span></div>
     <div class="hsb-sep"></div>

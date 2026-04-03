@@ -588,12 +588,9 @@
       .hero-foto-movil::after{
         content:'';
         position:absolute;
-        inset:0;
-        background:
-          linear-gradient(to top,    #1C1C1C 0%, rgba(28,28,28,.5) 18%, transparent 100%),
-          linear-gradient(to bottom, transparent 82%, rgba(28,28,28,.0) 100%),
-          linear-gradient(to right,  #1C1C1C 0%, rgba(28,28,28,.6) 10%, transparent 30%),
-          linear-gradient(to left,   #1C1C1C 0%, rgba(28,28,28,.7) 18%, transparent 45%);
+        bottom:0;left:0;right:0;
+        height:14%;
+        background:linear-gradient(to top,#1C1C1C 0%,rgba(28,28,28,.5) 60%,transparent 100%);
         z-index:1;
         pointer-events:none;
       }

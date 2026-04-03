@@ -588,11 +588,12 @@
       .hero-foto-movil::after{
         content:'';
         position:absolute;
-        bottom:0;left:0;right:0;
-        height:25%;
+        inset:0;
         background:
-          linear-gradient(to top, #1C1C1C 0%, rgba(28,28,28,.7) 45%, transparent 100%),
-          linear-gradient(to top right, #1C1C1C 0%, #1C1C1C 20%, rgba(28,28,28,.8) 40%, transparent 70%);
+          linear-gradient(to top,    #1C1C1C 0%, rgba(28,28,28,.5) 18%, transparent 100%),
+          linear-gradient(to bottom, transparent 82%, rgba(28,28,28,.0) 100%),
+          linear-gradient(to right,  #1C1C1C 0%, rgba(28,28,28,.6) 10%, transparent 30%),
+          linear-gradient(to left,   #1C1C1C 0%, rgba(28,28,28,.7) 18%, transparent 45%);
         z-index:1;
         pointer-events:none;
       }

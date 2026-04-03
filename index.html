@@ -589,14 +589,14 @@
         content:'';
         position:absolute;
         bottom:0;left:0;right:0;
-        height:18%;
-        background:linear-gradient(to top,#1C1C1C 0%,transparent 100%);
+        height:40%;
+        background:linear-gradient(to top,#1C1C1C 0%,#1C1C1C 30%,rgba(28,28,28,.8) 60%,transparent 100%);
         z-index:1;
         pointer-events:none;
       }
-      /* En móvil ocultar la foto de fondo (usar foto real en su lugar) */
-      .hero-bg-img{opacity:.15!important}
-      .hero-bg-overlay{background:rgba(28,28,28,.85)!important}
+      /* En móvil foto de fondo completamente oculta */
+      .hero-bg-img{opacity:0!important}
+      .hero-bg-overlay{background:rgba(28,28,28,1)!important}
       #hero{padding-bottom:2rem}
     }
   </style>

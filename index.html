@@ -1435,17 +1435,14 @@
   const stickyBar = document.getElementById('proc-sticky');
   const procSection = document.getElementById('procedimientos');
 
-  // Sticky bar — solo visible cuando estamos DENTRO de la sección procedimientos
+  // Sticky bar — aparece SOLO cuando estás dentro de la sección procedimientos
   window.addEventListener('scroll', function() {
-    const procTop = procSection.offsetTop;
-    const procBottom = procTop + procSection.offsetHeight;
-    const scrollPos = window.scrollY + nav.offsetHeight + 10;
-    if(scrollPos >= procTop && scrollPos < procBottom) {
-      stickyBar.classList.add('visible');
-    } else {
-      stickyBar.classList.remove('visible');
-    }
+    const top = procSection.offsetTop;
+    const bottom = top + procSection.offsetHeight;
+    const show = window.scrollY > (top - 80) && window.scrollY < (bottom - 100);
+    stickyBar.classList.toggle('visible', show);
   }, {passive: true});
+
 
   // ── CARDS EXPANDIBLES ──
   function toggleCard(card) {

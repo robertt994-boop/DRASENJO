@@ -1436,15 +1436,13 @@
 
   // Sticky bar: scroll listener fiable
   function updateStickyBar() {
+    if(scrollY < 100){ stickyBar.classList.remove('visible'); return; }
     const rect = procSection.getBoundingClientRect();
     const navH = nav.offsetHeight;
-    // Mostrar solo cuando el TOP de procedimientos ya ha subido por encima del nav
-    // y el BOTTOM aún no ha salido por arriba
     const isVisible = rect.top < navH && rect.bottom > navH + 80;
     stickyBar.classList.toggle('visible', isVisible);
   }
   window.addEventListener('scroll', updateStickyBar, {passive: true});
-  updateStickyBar(); // Comprobar al cargar
 
   // También mostrar sticky al clicar "Procedimientos" en el nav
   document.querySelectorAll('a[href="#procedimientos"]').forEach(a => {

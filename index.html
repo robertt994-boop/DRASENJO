@@ -495,19 +495,10 @@
       .eyebrow::before{display:none}
     }
     @media(max-width:768px){}
-
-    .hero-stats-bar{display:none;background:var(--noir);border-bottom:1px solid rgba(210,165,84,.2);padding:.9rem 5vw}
-    .hero-stats-bar{display:flex;align-items:center;justify-content:space-around}
-    .hsb-item{display:flex;flex-direction:column;align-items:center;gap:.2rem;flex:1}
-    .hsb-n{font-family:var(--fd);font-size:1.5rem;font-weight:300;color:var(--crema);line-height:1;display:block}
     .hsb-n sup{color:var(--or);font-size:.7rem;vertical-align:super}
-    .hsb-l{font-size:.48rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(245,238,230,.5);text-align:center}
-    .hsb-sep{width:1px;height:28px;background:rgba(210,165,84,.2);flex-shrink:0}
-    @media(min-width:900px){.hero-stats-bar{display:none}}
-
-    .hero-mobile-block{display:none;background:var(--noir)}
-    @media(max-width:768px){.hero-mobile-block{display:block}}
-    @media(min-width:769px){.hero-stats-bar{display:none}}
+    @media(min-width:900px){}
+    @media(max-width:768px){}
+    @media(min-width:769px){}
 
     /* ── FOTO HERO MÓVIL ── */
     .hero-foto-movil{display:none}
@@ -548,6 +539,16 @@
       .hero-bg-overlay{background:rgba(28,28,28,1)!important}
       #hero{padding-bottom:2rem}
     }
+
+    /* ── HERO MOBILE BLOCK ── */
+    .hero-mobile-block{display:none;background:var(--noir)}
+    @media(max-width:768px){.hero-mobile-block{display:block}}
+    .hero-stats-bar{display:flex;align-items:center;justify-content:space-around;background:var(--noir);border-bottom:1px solid rgba(210,165,84,.2);padding:.9rem 5vw}
+    .hsb-item{display:flex;flex-direction:column;align-items:center;gap:.2rem;flex:1}
+    .hsb-n{font-family:var(--fd);font-size:1.5rem;font-weight:300;color:var(--crema);line-height:1;display:block}
+    .hsb-n sup{color:var(--or);font-size:.7rem;vertical-align:super}
+    .hsb-l{font-size:.48rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(245,238,230,.5);text-align:center}
+    .hsb-sep{width:1px;height:28px;background:rgba(210,165,84,.2);flex-shrink:0}
   </style>
   <script type="application/ld+json">
   {
@@ -1434,22 +1435,17 @@
   const stickyBar = document.getElementById('proc-sticky');
   const procSection = document.getElementById('procedimientos');
 
-  // Sticky bar: scroll listener fiable
-  function updateStickyBar() {
-    if(scrollY < 100){ stickyBar.classList.remove('visible'); return; }
-    const rect = procSection.getBoundingClientRect();
-    const navH = nav.offsetHeight;
-    const isVisible = rect.top < navH && rect.bottom > navH + 80;
-    stickyBar.classList.toggle('visible', isVisible);
-  }
-  window.addEventListener('scroll', updateStickyBar, {passive: true});
-
-  // También mostrar sticky al clicar "Procedimientos" en el nav
-  document.querySelectorAll('a[href="#procedimientos"]').forEach(a => {
-    a.addEventListener('click', () => {
-      setTimeout(updateStickyBar, 500);
-    });
-  });
+  // Sticky bar — solo visible cuando estamos DENTRO de la sección procedimientos
+  window.addEventListener('scroll', function() {
+    const procTop = procSection.offsetTop;
+    const procBottom = procTop + procSection.offsetHeight;
+    const scrollPos = window.scrollY + nav.offsetHeight + 10;
+    if(scrollPos >= procTop && scrollPos < procBottom) {
+      stickyBar.classList.add('visible');
+    } else {
+      stickyBar.classList.remove('visible');
+    }
+  }, {passive: true});
 
   // ── CARDS EXPANDIBLES ──
   function toggleCard(card) {

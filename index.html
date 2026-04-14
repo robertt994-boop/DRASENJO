@@ -1438,8 +1438,9 @@
   function updateStickyBar() {
     const rect = procSection.getBoundingClientRect();
     const navH = nav.offsetHeight;
-    // Mostrar cuando la sección entra en pantalla y ocultar cuando la dejamos
-    const isVisible = rect.top < window.innerHeight && rect.bottom > navH + 80;
+    // Mostrar solo cuando el TOP de procedimientos ya ha subido por encima del nav
+    // y el BOTTOM aún no ha salido por arriba
+    const isVisible = rect.top < navH && rect.bottom > navH + 80;
     stickyBar.classList.toggle('visible', isVisible);
   }
   window.addEventListener('scroll', updateStickyBar, {passive: true});
